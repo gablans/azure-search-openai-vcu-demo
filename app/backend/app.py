@@ -131,6 +131,56 @@ async def assets(path):
     return await send_from_directory(Path(__file__).resolve().parent / "static" / "assets", path)
 
 
+@bp.route("/content_understanding/videos/<path:filename>")
+async def video_content(filename):
+    """Serve video files for the video player."""
+    video_path = Path(__file__).resolve().parent / ".." / ".." / "data" / "content_understanding" / "videos"
+    return await send_from_directory(video_path, filename)
+
+
+@bp.route("/video_thumbnails/<path:filename>")
+async def video_thumbnails(filename):
+    """Serve generated video thumbnails."""
+    thumbnail_path = Path(__file__).resolve().parent / "static" / "video_thumbnails"
+    return await send_from_directory(thumbnail_path, filename)
+
+
+@bp.route("/api/extract_thumbnail", methods=["POST"])
+async def extract_thumbnail():
+    """API endpoint to extract video thumbnail at a specific timestamp."""
+    try:
+        from core.video_frame_extractor import VideoFrameExtractor
+        
+        request_json = await request.get_json()
+        video_filename = request_json.get("video_filename", "")
+        timestamp = request_json.get("timestamp", "00:00:01")
+        
+        if not video_filename:
+            return jsonify({"error": "video_filename is required"}), 400
+        
+        extractor = VideoFrameExtractor()
+        thumbnail_path = extractor.extract_thumbnail(video_filename, timestamp)
+        
+        if thumbnail_path:
+            return jsonify({
+                "success": True,
+                "thumbnail_path": thumbnail_path,
+                "video_filename": video_filename,
+                "timestamp": timestamp
+            })
+        else:
+            return jsonify({
+                "success": False,
+                "error": "Failed to extract thumbnail"
+            }), 500
+            
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
+
+
 @bp.route("/content/<path>")
 @authenticated_path
 async def content_file(path: str, auth_claims: dict[str, Any]):

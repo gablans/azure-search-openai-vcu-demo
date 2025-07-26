@@ -1,0 +1,3082 @@
+{
+  "id": "2714315b-6399-4a42-a1d3-366167f169bc",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "gabeSearchAnalyzer2",
+    "apiVersion": "2025-05-01-preview",
+    "createdAt": "2025-07-25T21:47:19Z",
+    "stringEncoding": "utf8",
+    "warnings": [
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Sexual` detected with severity `Medium`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[9]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[17]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[19]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[25]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[33]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[35]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Sexual` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[37]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[41]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[45]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Sexual` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[47]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[57]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[59]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Sexual` detected with severity `Medium`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[77]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[85]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[93]"
+      },
+      {
+        "code": "HarmfulContentDetected",
+        "message": "Content of category `Violence` detected with severity `Low`. Please use the field content with caution.",
+        "target": "Result.Contents[0].Segments[101]"
+      }
+    ],
+    "contents": [
+      {
+        "markdown": "# Video: 00:00.000 => 03:07.987\nWidth: 1280\nHeight: 720\n\n## Segment 1: 00:00.297 => 00:50.589\nThe video introduces the Hive backpack, designed for modern travelers. It showcases the backpack's modular design, wardrobe system, and kangaroo pocket, emphasizing its adaptability and storage efficiency. The video features two individuals using the backpack in various settings, highlighting its utility for both urban and outdoor adventures. The Hive backpack is shown to be versatile, with features like a smart packing cube and a kangaroo pocket for additional storage.\n\nTranscript\n```\nWEBVTT\n\n00:19.640 --> 00:24.560\n<Speaker 1>This is Hive, the travel lifestyle backpack created with new nomads in mind.\n\n00:25.040 --> 00:31.280\n<Speaker 1>With a modular design that goes from 22 to 46 liters, Hive is ready to adapt to any adventure.\n\n00:32.640 --> 00:38.560\n<Speaker 1>The wardrobe system allows you to organize and compress your clothing to fit up to 20% more into the backpack.\n\n00:40.400 --> 00:46.080\n<Speaker 1>The kangaroo pocket is designed to unzip, unfold, and store belongings outside of the backpack.\n\n00:48.120 --> 00:56.160\n<Speaker 1>The 12-liter smart packing cube fits perfectly into the front pocket of the backpack, so it keeps your belongings organized and easily accessible when on the go.\n```\n\nKey Frames\n- 00:00.297 ![](keyFrame.297.jpg)\n- 00:01.188 ![](keyFrame.1188.jpg)\n- 00:01.782 ![](keyFrame.1782.jpg)\n- 00:03.003 ![](keyFrame.3003.jpg)\n- 00:04.224 ![](keyFrame.4224.jpg)\n- 00:05.445 ![](keyFrame.5445.jpg)\n- 00:06.699 ![](keyFrame.6699.jpg)\n- 00:08.151 ![](keyFrame.8151.jpg)\n- 00:08.976 ![](keyFrame.8976.jpg)\n- 00:10.065 ![](keyFrame.10065.jpg)\n- 00:10.692 ![](keyFrame.10692.jpg)\n- 00:11.616 ![](keyFrame.11616.jpg)\n- 00:12.837 ![](keyFrame.12837.jpg)\n- 00:14.058 ![](keyFrame.14058.jpg)\n- 00:15.246 ![](keyFrame.15246.jpg)\n- 00:15.840 ![](keyFrame.15840.jpg)\n- 00:17.094 ![](keyFrame.17094.jpg)\n- 00:17.721 ![](keyFrame.17721.jpg)\n- 00:19.074 ![](keyFrame.19074.jpg)\n- 00:19.833 ![](keyFrame.19833.jpg)\n- 00:20.592 ![](keyFrame.20592.jpg)\n- 00:22.044 ![](keyFrame.22044.jpg)\n- 00:23.001 ![](keyFrame.23001.jpg)\n- 00:23.925 ![](keyFrame.23925.jpg)\n- 00:24.849 ![](keyFrame.24849.jpg)\n- 00:25.806 ![](keyFrame.25806.jpg)\n- 00:27.027 ![](keyFrame.27027.jpg)\n- 00:27.918 ![](keyFrame.27918.jpg)\n- 00:28.908 ![](keyFrame.28908.jpg)\n- 00:30.162 ![](keyFrame.30162.jpg)\n- 00:31.416 ![](keyFrame.31416.jpg)\n- 00:32.076 ![](keyFrame.32076.jpg)\n- 00:32.736 ![](keyFrame.32736.jpg)\n- 00:33.627 ![](keyFrame.33627.jpg)\n- 00:34.221 ![](keyFrame.34221.jpg)\n- 00:35.178 ![](keyFrame.35178.jpg)\n- 00:36.432 ![](keyFrame.36432.jpg)\n- 00:37.686 ![](keyFrame.37686.jpg)\n- 00:38.940 ![](keyFrame.38940.jpg)\n- 00:39.864 ![](keyFrame.39864.jpg)\n- 00:40.491 ![](keyFrame.40491.jpg)\n- 00:41.448 ![](keyFrame.41448.jpg)\n- 00:42.834 ![](keyFrame.42834.jpg)\n- 00:43.593 ![](keyFrame.43593.jpg)\n- 00:44.352 ![](keyFrame.44352.jpg)\n- 00:45.804 ![](keyFrame.45804.jpg)\n- 00:47.058 ![](keyFrame.47058.jpg)\n- 00:48.312 ![](keyFrame.48312.jpg)\n- 00:49.764 ![](keyFrame.49764.jpg)\n- 00:50.589 ![](keyFrame.50589.jpg)\n\n## Segment 2: 00:52.074 => 01:01.314\nThe segment demonstrates the Hive backpack's smart packing cube and SpiderNet system. The packing cube is shown to fit clothes efficiently, utilizing a dual compression zipper to reduce volume. The SpiderNet system is highlighted for its ability to secure additional items within the backpack.\n\nTranscript\n```\nWEBVTT\n\n00:48.120 --> 00:56.160\n<Speaker 1>The 12-liter smart packing cube fits perfectly into the front pocket of the backpack, so it keeps your belongings organized and easily accessible when on the go.\n\n00:56.640 --> 01:02.120\n<Speaker 1>For space optimization, use the dual compression zipper and reduce the volume by up to 50%.\n```\n\nKey Frames\n- 00:52.074 ![](keyFrame.52074.jpg)\n- 00:53.328 ![](keyFrame.53328.jpg)\n- 00:54.582 ![](keyFrame.54582.jpg)\n- 00:55.836 ![](keyFrame.55836.jpg)\n- 00:56.925 ![](keyFrame.56925.jpg)\n- 00:57.915 ![](keyFrame.57915.jpg)\n- 00:58.443 ![](keyFrame.58443.jpg)\n- 00:59.730 ![](keyFrame.59730.jpg)\n- 01:00.522 ![](keyFrame.60522.jpg)\n- 01:01.314 ![](keyFrame.61314.jpg)\n\n## Segment 3: 01:02.700 => 01:38.274\nThis segment showcases the Hive backpack's versatility and comfort features in various settings. It highlights the backpack's smart packing cube, SpiderNet system, and thermoformed back panel for comfort. The scenes transition from indoor packing to outdoor adventures, including beach and forest settings, demonstrating the backpack's adaptability and durability. The offload mechanism is also featured, emphasizing weight distribution for comfort during hikes.\n\nTranscript\n```\nWEBVTT\n\n01:02.480 --> 01:06.960\n<Speaker 1>Secure it by using the SpiderNet system and unlock Hive's full packing potential.\n\n01:08.000 --> 01:12.880\n<Speaker 1>The SpiderNet's elasticity and design can also be used to fasten in any other items.\n\n01:14.680 --> 01:20.880\n<Speaker 1>Hive's thermoformed back panel comfortably supports the spine and keeps the air circulated during longer journeys.\n\n01:21.840 --> 01:26.400\n<Speaker 1>Use the offload mechanism to reduce the weight on your shoulders and distribute it differently.\n\n01:30.000 --> 01:37.360\n<Speaker 1>All main materials in the backpack are 100% recycled and coated with a water-repellent finish and sealed YKK zippers.\n```\n\nKey Frames\n- 01:02.700 ![](keyFrame.62700.jpg)\n- 01:03.327 ![](keyFrame.63327.jpg)\n- 01:04.548 ![](keyFrame.64548.jpg)\n- 01:05.175 ![](keyFrame.65175.jpg)\n- 01:06.462 ![](keyFrame.66462.jpg)\n- 01:07.683 ![](keyFrame.67683.jpg)\n- 01:08.937 ![](keyFrame.68937.jpg)\n- 01:10.191 ![](keyFrame.70191.jpg)\n- 01:11.445 ![](keyFrame.71445.jpg)\n- 01:12.666 ![](keyFrame.72666.jpg)\n- 01:14.019 ![](keyFrame.74019.jpg)\n- 01:14.778 ![](keyFrame.74778.jpg)\n- 01:15.537 ![](keyFrame.75537.jpg)\n- 01:16.659 ![](keyFrame.76659.jpg)\n- 01:17.682 ![](keyFrame.77682.jpg)\n- 01:18.606 ![](keyFrame.78606.jpg)\n- 01:19.464 ![](keyFrame.79464.jpg)\n- 01:20.751 ![](keyFrame.80751.jpg)\n- 01:21.477 ![](keyFrame.81477.jpg)\n- 01:22.203 ![](keyFrame.82203.jpg)\n- 01:23.589 ![](keyFrame.83589.jpg)\n- 01:24.843 ![](keyFrame.84843.jpg)\n- 01:26.031 ![](keyFrame.86031.jpg)\n- 01:27.219 ![](keyFrame.87219.jpg)\n- 01:28.506 ![](keyFrame.88506.jpg)\n- 01:29.760 ![](keyFrame.89760.jpg)\n- 01:31.047 ![](keyFrame.91047.jpg)\n- 01:32.400 ![](keyFrame.92400.jpg)\n- 01:33.489 ![](keyFrame.93489.jpg)\n- 01:34.611 ![](keyFrame.94611.jpg)\n- 01:35.304 ![](keyFrame.95304.jpg)\n- 01:35.997 ![](keyFrame.95997.jpg)\n- 01:37.515 ![](keyFrame.97515.jpg)\n- 01:38.274 ![](keyFrame.98274.jpg)\n\n## Segment 4: 01:38.274 => 02:19.260\nThis segment continues to showcase the Hive backpack's versatility and features. It begins with a person resting by a waterfall, emphasizing the backpack's weatherproof and sustainable materials. The scene transitions to a couple entering a room, where the expandable wardrobe feature is demonstrated. The convenience of the Fidlock magnetic system for attaching a toiletry bag is shown, followed by the adaptable bum bag feature. The segment concludes with scenes of urban utility, highlighting the backpack's camera cube for photographers.\n\nTranscript\n```\nWEBVTT\n\n01:39.960 --> 01:41.520\n<Speaker 1>When you get to your new destination,\n\n01:41.840 --> 01:46.880\n<Speaker 1>Simply expand and hang your wardrobe using the detachable loop to get easy access to your clothing.\n\n01:48.800 --> 01:53.120\n<Speaker 1>A toiletry bag can also be easily attached using the Fidlock magnetic system.\n\n01:54.240 --> 02:00.720\n<Speaker 1>The supportive hip belt can be removed from the backpack and used as an adaptable bum bag to keep your important belongings safe.\n\n02:09.160 --> 02:16.640\n<Speaker 1>The Full-Size Camera Cube is a durable case with customizable organizational compartments that adapt to the shape and size of your equipment.\n\n02:17.280 --> 02:21.200\n<Speaker 1>Ideal for content creators who want quick access for spontaneous shots.\n```\n\nKey Frames\n- 01:38.274 ![](keyFrame.98274.jpg)\n- 01:39.594 ![](keyFrame.99594.jpg)\n- 01:40.584 ![](keyFrame.100584.jpg)\n- 01:41.541 ![](keyFrame.101541.jpg)\n- 01:42.135 ![](keyFrame.102135.jpg)\n- 01:43.290 ![](keyFrame.103290.jpg)\n- 01:43.884 ![](keyFrame.103884.jpg)\n- 01:45.039 ![](keyFrame.105039.jpg)\n- 01:45.567 ![](keyFrame.105567.jpg)\n- 01:46.821 ![](keyFrame.106821.jpg)\n- 01:48.108 ![](keyFrame.108108.jpg)\n- 01:49.098 ![](keyFrame.109098.jpg)\n- 01:49.857 ![](keyFrame.109857.jpg)\n- 01:50.880 ![](keyFrame.110880.jpg)\n- 01:51.573 ![](keyFrame.111573.jpg)\n- 01:52.266 ![](keyFrame.112266.jpg)\n- 01:53.685 ![](keyFrame.113685.jpg)\n- 01:54.906 ![](keyFrame.114906.jpg)\n- 01:55.434 ![](keyFrame.115434.jpg)\n- 01:56.358 ![](keyFrame.116358.jpg)\n- 01:57.414 ![](keyFrame.117414.jpg)\n- 01:58.074 ![](keyFrame.118074.jpg)\n- 01:58.734 ![](keyFrame.118734.jpg)\n- 02:00.120 ![](keyFrame.120120.jpg)\n- 02:01.440 ![](keyFrame.121440.jpg)\n- 02:02.067 ![](keyFrame.122067.jpg)\n- 02:03.321 ![](keyFrame.123321.jpg)\n- 02:04.410 ![](keyFrame.124410.jpg)\n- 02:05.367 ![](keyFrame.125367.jpg)\n- 02:06.423 ![](keyFrame.126423.jpg)\n- 02:07.512 ![](keyFrame.127512.jpg)\n- 02:08.304 ![](keyFrame.128304.jpg)\n- 02:09.096 ![](keyFrame.129096.jpg)\n- 02:10.185 ![](keyFrame.130185.jpg)\n- 02:11.439 ![](keyFrame.131439.jpg)\n- 02:12.066 ![](keyFrame.132066.jpg)\n- 02:13.320 ![](keyFrame.133320.jpg)\n- 02:13.947 ![](keyFrame.133947.jpg)\n- 02:14.574 ![](keyFrame.134574.jpg)\n- 02:15.828 ![](keyFrame.135828.jpg)\n- 02:16.917 ![](keyFrame.136917.jpg)\n- 02:17.544 ![](keyFrame.137544.jpg)\n- 02:18.006 ![](keyFrame.138006.jpg)\n- 02:18.633 ![](keyFrame.138633.jpg)\n- 02:19.260 ![](keyFrame.139260.jpg)\n\n## Segment 5: 02:19.260 => 02:48.498\nThis segment showcases the Hive backpack's versatility and features in urban settings. It begins with a couple walking through a vibrant street, highlighting the backpack's urban utility. A man demonstrates the camera cube feature, emphasizing its organizational benefits for photographers. The segment continues with scenes by a river and in a cafe, showcasing the backpack's style and suitability for digital nomads. The detachable tech pouch and ergonomic design are also featured, demonstrating the backpack's convenience and adaptability.\n\nTranscript\n```\nWEBVTT\n\n02:17.280 --> 02:21.200\n<Speaker 1>Ideal for content creators who want quick access for spontaneous shots.\n\n02:22.640 --> 02:29.040\n<Speaker 1>A dedicated laptop compartment fits up to a 16-inch laptop securely, thanks to its padded and scratch-proof lining.\n\n02:30.080 --> 02:36.240\n<Speaker 1>Internal mesh pockets are designed to store personal belongings and help keep items like cables and chargers organized.\n\n02:37.400 --> 02:42.000\n<Speaker 1>For additional storage, quickly attach and detach the tech pouch to the front of the backpack.\n\n02:44.720 --> 02:49.520\n<Speaker 1>The bum bag can also be attached to the camera cube to carry as a sling bag whilst on the move.\n```\n\nKey Frames\n- 02:19.260 ![](keyFrame.139260.jpg)\n- 02:20.019 ![](keyFrame.140019.jpg)\n- 02:21.207 ![](keyFrame.141207.jpg)\n- 02:21.933 ![](keyFrame.141933.jpg)\n- 02:23.319 ![](keyFrame.143319.jpg)\n- 02:24.771 ![](keyFrame.144771.jpg)\n- 02:25.596 ![](keyFrame.145596.jpg)\n- 02:27.048 ![](keyFrame.147048.jpg)\n- 02:27.675 ![](keyFrame.147675.jpg)\n- 02:28.632 ![](keyFrame.148632.jpg)\n- 02:29.292 ![](keyFrame.149292.jpg)\n- 02:29.919 ![](keyFrame.149919.jpg)\n- 02:30.810 ![](keyFrame.150810.jpg)\n- 02:32.064 ![](keyFrame.152064.jpg)\n- 02:33.318 ![](keyFrame.153318.jpg)\n- 02:34.242 ![](keyFrame.154242.jpg)\n- 02:35.166 ![](keyFrame.155166.jpg)\n- 02:35.826 ![](keyFrame.155826.jpg)\n- 02:37.080 ![](keyFrame.157080.jpg)\n- 02:37.707 ![](keyFrame.157707.jpg)\n- 02:38.334 ![](keyFrame.158334.jpg)\n- 02:39.588 ![](keyFrame.159588.jpg)\n- 02:40.809 ![](keyFrame.160809.jpg)\n- 02:41.436 ![](keyFrame.161436.jpg)\n- 02:42.690 ![](keyFrame.162690.jpg)\n- 02:43.944 ![](keyFrame.163944.jpg)\n- 02:45.165 ![](keyFrame.165165.jpg)\n- 02:45.726 ![](keyFrame.165726.jpg)\n- 02:46.683 ![](keyFrame.166683.jpg)\n- 02:47.541 ![](keyFrame.167541.jpg)\n- 02:48.498 ![](keyFrame.168498.jpg)\n\n## Segment 6: 02:48.498 => 03:07.143\nThis segment showcases the Hive backpack's versatility and features in urban settings. It begins with a woman working on a laptop in a cafe, highlighting the backpack's suitability for digital nomads. The segment continues with scenes of a woman organizing her backpack, demonstrating the detachable tech pouch feature, and adjusting the backpack straps to showcase its ergonomic design. The adaptability and style of the backpack are highlighted as a person uses it in an urban setting and walks through a city street. A woman boards a bus with the backpack, demonstrating its travel-friendly design. The segment concludes with a couple walking through a city with a bridge in the background, and the video ends with the Tropicfeel logo, emphasizing the brand identity.\n\nTranscript\n```\nWEBVTT\n\n02:44.720 --> 02:49.520\n<Speaker 1>The bum bag can also be attached to the camera cube to carry as a sling bag whilst on the move.\n\n02:51.600 --> 02:54.240\n<Speaker 1>Hive gives you the freedom to choose how you want to wear it.\n\n02:55.120 --> 02:59.520\n<Speaker 1>Get ready to adapt to the new travel lifestyle and journey like never before.\n```\n\nKey Frames\n- 02:48.498 ![](keyFrame.168498.jpg)\n- 02:48.993 ![](keyFrame.168993.jpg)\n- 02:50.181 ![](keyFrame.170181.jpg)\n- 02:51.435 ![](keyFrame.171435.jpg)\n- 02:52.689 ![](keyFrame.172689.jpg)\n- 02:53.943 ![](keyFrame.173943.jpg)\n- 02:55.197 ![](keyFrame.175197.jpg)\n- 02:56.352 ![](keyFrame.176352.jpg)\n- 02:57.606 ![](keyFrame.177606.jpg)\n- 02:58.827 ![](keyFrame.178827.jpg)\n- 03:00.048 ![](keyFrame.180048.jpg)\n- 03:00.774 ![](keyFrame.180774.jpg)\n- 03:01.500 ![](keyFrame.181500.jpg)\n- 03:02.226 ![](keyFrame.182226.jpg)\n- 03:03.843 ![](keyFrame.183843.jpg)\n- 03:04.668 ![](keyFrame.184668.jpg)\n- 03:05.493 ![](keyFrame.185493.jpg)\n- 03:06.318 ![](keyFrame.186318.jpg)\n- 03:07.143 ![](keyFrame.187143.jpg)",
+        "fields": {
+          "Segments": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "1"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Introduction of Hive backpack and its features."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "1"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Two individuals are waking up in separate beds, one in a rustic setting and the other in a modern room."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:00.297"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:00.297"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bed (center), Pillow (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "2"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The Hive backpack is showcased in two different settings, with the brand name 'Hive' displayed prominently."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:01.188"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:01.782"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Hive' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "3"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of the Hive backpack being opened and packed with clothes and camera equipment."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:03.003"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:04.224"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Clothes (left), Camera equipment (right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Pack, Smarter"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "4"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack is being packed with clothes and camera equipment, emphasizing its storage capabilities."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:05.445"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:06.699"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Clothes (left), Camera equipment (right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "5"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack is being zipped up, ready for travel, with the words 'Stay Longer' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:08.151"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:08.976"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Stay Longer' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Stay, Longer"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "6"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack is shown with a water bottle in its side pocket, highlighting its utility."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:10.065"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:10.692"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Water bottle (right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": "Tropicfeel"
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "7"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Individuals are wearing the backpack, ready to go out, with the words 'Feel Lighter' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:11.616"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:12.837"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Feel Lighter' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Feel, Lighter"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "8"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Individuals are walking in different environments with the backpack, with the words 'Go Further' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:14.058"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:15.246"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Go Further' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Go, Further"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "9"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack is shown in various travel settings, including a subway and a bus."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:17.094"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:19.074"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Subway (right), Bus (left)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "10"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man is walking through a city with the backpack, showcasing its urban utility."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:19.833"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:20.592"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Cityscape (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "11"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The man is exploring a city, highlighting the backpack's suitability for urban adventures."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.044"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:23.001"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Cityscape (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "12"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The man is in a park, purchasing a snack, demonstrating the backpack's convenience."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:24.849"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:27.918"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Snack stand (right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "13"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack is placed on the ground, emphasizing its durability and design."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:28.908"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:30.162"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "14"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The wardrobe system of the backpack is demonstrated, showing its capacity to pack more efficiently."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:31.416"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:32.736"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Clothes (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Wardrobe System, Pack up to 20% more"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "15"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The kangaroo pocket of the backpack is shown, highlighting its additional storage space."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:41.448"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:44.352"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Shoes (inside pocket)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Kangaroo Pocket, 6L Expansion, keep items separate"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "16"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The smart packing cube is introduced, fitting perfectly into the backpack's front pocket."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:48.312"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:50.589"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Packing cube (center), Backpack (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Packing Cube 12L, Pack more, pack smarter"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "2"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Demonstration of Hive backpack's smart packing cube and SpiderNet system."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "17"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is packing clothes into the smart packing cube, demonstrating its capacity and organization features."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:52.074"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:56.925"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Packing cube (center), Clothes (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Smart Packing Cube, Dual Compression Zipper"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "18"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The packed cube is compressed and zipped, showing the dual compression zipper feature."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:57.915"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:58.443"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Packing cube (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Reduce Volume by 50%"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "19"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The SpiderNet system is shown being used to secure items in the backpack."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:59.730"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:01.314"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), SpiderNet (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "SpiderNet, Store & Hold Extra Items"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "3"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Showcasing Hive backpack's versatility and comfort features in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "20"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is seen packing the backpack with the smart packing cube and other items, preparing for travel."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:02.700"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:07.683"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Packing cube (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Unlock Hive's Full Packing Potential"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "21"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A scenic beach view is shown, followed by a couple using the backpack on the beach, highlighting its outdoor utility."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:08.937"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:12.666"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Beach (background), Backpack (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "22"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The backpack's thermoformed back panel is highlighted for comfort, as a person holds it on the beach."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:14.019"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:15.537"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Superior Comfort' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Superior Comfort, Thermoformed Back Panel"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "23"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A couple is hiking with the backpack, demonstrating its suitability for outdoor adventures."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:16.659"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:19.464"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Forest (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "24"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The offload mechanism is shown, emphasizing weight distribution for comfort during hikes."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:20.751"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:22.203"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Text 'Off Load Mechanism' (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Off Load Mechanism, Regulate Weight Distribution"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "25"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The couple is seen walking through a forest, showcasing the backpack's utility in nature."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:23.589"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:26.031"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Forest (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "26"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A monkey is seen in the trees, adding to the natural setting of the scene."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:27.219"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:28.506"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Monkey (center), Trees (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "27"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a spider in its web, enhancing the natural environment theme."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:29.760"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:31.047"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Spider (center), Web (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "28"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is resting by a waterfall with the backpack, emphasizing its durability and weatherproof features."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:32.400"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:38.274"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Waterfall (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Weatherproof & Sustainable, Materials 100% Recycled and Coated"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "4"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Showcasing Hive backpack's versatility and comfort features in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "28"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is resting by a waterfall with the backpack, emphasizing its durability and weatherproof features."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:32.400"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:38.274"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Waterfall (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Weatherproof & Sustainable, Materials 100% Recycled and Coated"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "29"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A couple enters a room, and a woman unpacks the backpack, demonstrating the expandable wardrobe feature."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:39.594"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:46.880"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Room (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Expand and Hang Your Wardrobe"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "30"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A toiletry bag is attached to the bathroom wall using the Fidlock magnetic system, showcasing its convenience."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:48.800"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:53.120"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Toiletry bag (center), Bathroom (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Toiletry Bag, Detachable FIDLOCK Security"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "31"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man demonstrates the adaptable bum bag feature by removing the hip belt from the backpack."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:01:54.240"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:00.720"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Bum bag (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Adaptable Bum Bag, Take Only Your Essentials"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "32"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A couple walks through a vibrant street, showcasing the backpack's urban utility."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:00.120"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:06.423"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Street (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "33"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man in an urban setting uses the backpack's camera cube, highlighting its organizational features for photographers."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:07.512"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:19.260"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Camera cube (center), Urban setting (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Camera Cube, Organize and Protect Your Gear"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "5"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Showcasing Hive backpack's versatility and comfort features in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "32"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A couple walks through a vibrant street, showcasing the backpack's urban utility."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:02.067"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:06.423"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Street (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "33"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man in an urban setting uses the backpack's camera cube, highlighting its organizational features for photographers."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:07.512"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:19.260"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Camera cube (center), Urban setting (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Camera Cube, Organize and Protect Your Gear"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "34"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person walks by a river with a backpack, showcasing its urban utility and style."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:20.019"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:21.933"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), River (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "35"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman sits on a bench with a backpack, demonstrating the laptop compartment feature."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:23.319"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:27.675"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Laptop (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Laptop Compartment, Easy Access & Padded, up to 16\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "36"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman works on a laptop in a cafe, with the backpack beside her, highlighting its suitability for digital nomads."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:28.632"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:30.810"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Laptop (center), Cafe (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "37"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman organizes her backpack, showcasing its internal compartments and tech pouch."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:32.064"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:35.826"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Tech pouch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Tech Pouch, Detachable FIDLOCK Security"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "38"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person demonstrates the detachable tech pouch feature, highlighting its convenience for carrying essentials."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:37.080"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:41.436"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Tech pouch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Tech Pouch, Detachable FIDLOCK Security"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "39"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person adjusts the backpack straps, showcasing its ergonomic design."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:42.690"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:45.726"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "40"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person uses the backpack in an urban setting, highlighting its adaptability and style."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:46.683"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:48.498"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Urban setting (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "6"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Showcasing Hive backpack's versatility and comfort features in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "36"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman works on a laptop in a cafe, with the backpack beside her, highlighting its suitability for digital nomads."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:28.632"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:30.810"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (right), Laptop (center), Cafe (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "37"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman organizes her backpack, showcasing its internal compartments and tech pouch."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:32.064"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:35.826"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Tech pouch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Tech Pouch, Detachable FIDLOCK Security"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "38"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person demonstrates the detachable tech pouch feature, highlighting its convenience for carrying essentials."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:37.080"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:41.436"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Tech pouch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Tech Pouch, Detachable FIDLOCK Security"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "39"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person adjusts the backpack straps, showcasing its ergonomic design."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:42.690"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:45.726"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "40"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person uses the backpack in an urban setting, highlighting its adaptability and style."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:46.683"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:48.498"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Urban setting (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "41"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person walks through a city street with a backpack, showcasing its urban utility and style."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:50.181"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:51.435"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), City street (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "42"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman boards a bus with a backpack, demonstrating its travel-friendly design."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:52.689"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:55.197"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Bus (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "43"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A couple walks through a city with a bridge in the background, showcasing the backpack's urban style."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:02:56.352"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:03:00.774"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Backpack (center), Bridge (background)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Hive"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "44"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The video ends with the Tropicfeel logo, emphasizing the brand identity."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:03:03.843"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:03:07.143"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Tropicfeel logo (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Tropicfeel"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Tropicfeel (center)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "audioVisual",
+        "startTimeMs": 0,
+        "endTimeMs": 187987,
+        "width": 1280,
+        "height": 720,
+        "KeyFrameTimesMs": [
+          297,
+          1188,
+          1782,
+          3003,
+          4224,
+          5445,
+          6699,
+          8151,
+          8976,
+          10065,
+          10692,
+          11616,
+          12837,
+          14058,
+          15246,
+          15840,
+          17094,
+          17721,
+          19074,
+          19833,
+          20592,
+          22044,
+          23001,
+          23925,
+          24849,
+          25806,
+          27027,
+          27918,
+          28908,
+          30162,
+          31416,
+          32076,
+          32736,
+          33627,
+          34221,
+          35178,
+          36432,
+          37686,
+          38940,
+          39864,
+          40491,
+          41448,
+          42834,
+          43593,
+          44352,
+          45804,
+          47058,
+          48312,
+          49764,
+          50589,
+          52074,
+          53328,
+          54582,
+          55836,
+          56925,
+          57915,
+          58443,
+          59730,
+          60522,
+          61314,
+          62700,
+          63327,
+          64548,
+          65175,
+          66462,
+          67683,
+          68937,
+          70191,
+          71445,
+          72666,
+          74019,
+          74778,
+          75537,
+          76659,
+          77682,
+          78606,
+          79464,
+          80751,
+          81477,
+          82203,
+          83589,
+          84843,
+          86031,
+          87219,
+          88506,
+          89760,
+          91047,
+          92400,
+          93489,
+          94611,
+          95304,
+          95997,
+          97515,
+          98274,
+          99594,
+          100584,
+          101541,
+          102135,
+          103290,
+          103884,
+          105039,
+          105567,
+          106821,
+          108108,
+          109098,
+          109857,
+          110880,
+          111573,
+          112266,
+          113685,
+          114906,
+          115434,
+          116358,
+          117414,
+          118074,
+          118734,
+          120120,
+          121440,
+          122067,
+          123321,
+          124410,
+          125367,
+          126423,
+          127512,
+          128304,
+          129096,
+          130185,
+          131439,
+          132066,
+          133320,
+          133947,
+          134574,
+          135828,
+          136917,
+          137544,
+          138006,
+          138633,
+          139260,
+          140019,
+          141207,
+          141933,
+          143319,
+          144771,
+          145596,
+          147048,
+          147675,
+          148632,
+          149292,
+          149919,
+          150810,
+          152064,
+          153318,
+          154242,
+          155166,
+          155826,
+          157080,
+          157707,
+          158334,
+          159588,
+          160809,
+          161436,
+          162690,
+          163944,
+          165165,
+          165726,
+          166683,
+          167541,
+          168498,
+          168993,
+          170181,
+          171435,
+          172689,
+          173943,
+          175197,
+          176352,
+          177606,
+          178827,
+          180048,
+          180774,
+          181500,
+          182226,
+          183843,
+          184668,
+          185493,
+          186318,
+          187143
+        ],
+        "transcriptPhrases": [
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 19640,
+            "endTimeMs": 24560,
+            "text": "This is Hive, the travel lifestyle backpack created with new nomads in mind.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 25040,
+            "endTimeMs": 31280,
+            "text": "With a modular design that goes from 22 to 46 liters, Hive is ready to adapt to any adventure.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 32640,
+            "endTimeMs": 38560,
+            "text": "The wardrobe system allows you to organize and compress your clothing to fit up to 20% more into the backpack.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 40400,
+            "endTimeMs": 46080,
+            "text": "The kangaroo pocket is designed to unzip, unfold, and store belongings outside of the backpack.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 48120,
+            "endTimeMs": 56160,
+            "text": "The 12-liter smart packing cube fits perfectly into the front pocket of the backpack, so it keeps your belongings organized and easily accessible when on the go.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 56640,
+            "endTimeMs": 62120,
+            "text": "For space optimization, use the dual compression zipper and reduce the volume by up to 50%.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 62480,
+            "endTimeMs": 66960,
+            "text": "Secure it by using the SpiderNet system and unlock Hive's full packing potential.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 68000,
+            "endTimeMs": 72880,
+            "text": "The SpiderNet's elasticity and design can also be used to fasten in any other items.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 74680,
+            "endTimeMs": 80880,
+            "text": "Hive's thermoformed back panel comfortably supports the spine and keeps the air circulated during longer journeys.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 81840,
+            "endTimeMs": 86400,
+            "text": "Use the offload mechanism to reduce the weight on your shoulders and distribute it differently.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 90000,
+            "endTimeMs": 97360,
+            "text": "All main materials in the backpack are 100% recycled and coated with a water-repellent finish and sealed YKK zippers.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 99960,
+            "endTimeMs": 101520,
+            "text": "When you get to your new destination,",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 101840,
+            "endTimeMs": 106880,
+            "text": "Simply expand and hang your wardrobe using the detachable loop to get easy access to your clothing.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 108800,
+            "endTimeMs": 113120,
+            "text": "A toiletry bag can also be easily attached using the Fidlock magnetic system.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 114240,
+            "endTimeMs": 120720,
+            "text": "The supportive hip belt can be removed from the backpack and used as an adaptable bum bag to keep your important belongings safe.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 129160,
+            "endTimeMs": 136640,
+            "text": "The Full-Size Camera Cube is a durable case with customizable organizational compartments that adapt to the shape and size of your equipment.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 137280,
+            "endTimeMs": 141200,
+            "text": "Ideal for content creators who want quick access for spontaneous shots.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 142640,
+            "endTimeMs": 149040,
+            "text": "A dedicated laptop compartment fits up to a 16-inch laptop securely, thanks to its padded and scratch-proof lining.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 150080,
+            "endTimeMs": 156240,
+            "text": "Internal mesh pockets are designed to store personal belongings and help keep items like cables and chargers organized.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 157400,
+            "endTimeMs": 162000,
+            "text": "For additional storage, quickly attach and detach the tech pouch to the front of the backpack.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 164720,
+            "endTimeMs": 169520,
+            "text": "The bum bag can also be attached to the camera cube to carry as a sling bag whilst on the move.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 171600,
+            "endTimeMs": 174240,
+            "text": "Hive gives you the freedom to choose how you want to wear it.",
+            "words": []
+          },
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 175120,
+            "endTimeMs": 179520,
+            "text": "Get ready to adapt to the new travel lifestyle and journey like never before.",
+            "words": []
+          }
+        ],
+        "cameraShotTimesMs": [
+          601,
+          2402,
+          3604,
+          4805,
+          6073,
+          7341,
+          9776,
+          10377,
+          11011,
+          12212,
+          13480,
+          14648,
+          16483,
+          18318,
+          21388,
+          22656,
+          23290,
+          24558,
+          25158,
+          26426,
+          27628,
+          28228,
+          29563,
+          30764,
+          33367,
+          33901,
+          34535,
+          35802,
+          37037,
+          38305,
+          39540,
+          40173,
+          40807,
+          42075,
+          45178,
+          46413,
+          47681,
+          48949,
+          51418,
+          52686,
+          53954,
+          55222,
+          56456,
+          57391,
+          58926,
+          62062,
+          63931,
+          65832,
+          67067,
+          68302,
+          69536,
+          70804,
+          72039,
+          73273,
+          76276,
+          77044,
+          78312,
+          78912,
+          80013,
+          82950,
+          84217,
+          85452,
+          86587,
+          87854,
+          89122,
+          90390,
+          91692,
+          93060,
+          93927,
+          96763,
+          98999,
+          100200,
+          100934,
+          102703,
+          104504,
+          106106,
+          107541,
+          108675,
+          109543,
+          110177,
+          112980,
+          114381,
+          115949,
+          116750,
+          119419,
+          120821,
+          122689,
+          123924,
+          124891,
+          125792,
+          127060,
+          127961,
+          128629,
+          129563,
+          130797,
+          132699,
+          135202,
+          136436,
+          137371,
+          137671,
+          138305,
+          138939,
+          139573,
+          140474,
+          142676,
+          143944,
+          146413,
+          148315,
+          148949,
+          149583,
+          150217,
+          151418,
+          152686,
+          153954,
+          154521,
+          156456,
+          158959,
+          160193,
+          162062,
+          163296,
+          164598,
+          166266,
+          167067,
+          168001,
+          169536,
+          170804,
+          172072,
+          173306,
+          174541,
+          175809,
+          176877,
+          178311,
+          179312,
+          183016
+        ],
+        "segments": [
+          {
+            "startTimeMs": 297,
+            "endTimeMs": 50589,
+            "description": "The video introduces the Hive backpack, designed for modern travelers. It showcases the backpack's modular design, wardrobe system, and kangaroo pocket, emphasizing its adaptability and storage efficiency. The video features two individuals using the backpack in various settings, highlighting its utility for both urban and outdoor adventures. The Hive backpack is shown to be versatile, with features like a smart packing cube and a kangaroo pocket for additional storage.",
+            "segmentId": "1"
+          },
+          {
+            "startTimeMs": 52074,
+            "endTimeMs": 61314,
+            "description": "The segment demonstrates the Hive backpack's smart packing cube and SpiderNet system. The packing cube is shown to fit clothes efficiently, utilizing a dual compression zipper to reduce volume. The SpiderNet system is highlighted for its ability to secure additional items within the backpack.",
+            "segmentId": "2"
+          },
+          {
+            "startTimeMs": 62700,
+            "endTimeMs": 98274,
+            "description": "This segment showcases the Hive backpack's versatility and comfort features in various settings. It highlights the backpack's smart packing cube, SpiderNet system, and thermoformed back panel for comfort. The scenes transition from indoor packing to outdoor adventures, including beach and forest settings, demonstrating the backpack's adaptability and durability. The offload mechanism is also featured, emphasizing weight distribution for comfort during hikes.",
+            "segmentId": "3"
+          },
+          {
+            "startTimeMs": 98274,
+            "endTimeMs": 139260,
+            "description": "This segment continues to showcase the Hive backpack's versatility and features. It begins with a person resting by a waterfall, emphasizing the backpack's weatherproof and sustainable materials. The scene transitions to a couple entering a room, where the expandable wardrobe feature is demonstrated. The convenience of the Fidlock magnetic system for attaching a toiletry bag is shown, followed by the adaptable bum bag feature. The segment concludes with scenes of urban utility, highlighting the backpack's camera cube for photographers.",
+            "segmentId": "4"
+          },
+          {
+            "startTimeMs": 139260,
+            "endTimeMs": 168498,
+            "description": "This segment showcases the Hive backpack's versatility and features in urban settings. It begins with a couple walking through a vibrant street, highlighting the backpack's urban utility. A man demonstrates the camera cube feature, emphasizing its organizational benefits for photographers. The segment continues with scenes by a river and in a cafe, showcasing the backpack's style and suitability for digital nomads. The detachable tech pouch and ergonomic design are also featured, demonstrating the backpack's convenience and adaptability.",
+            "segmentId": "5"
+          },
+          {
+            "startTimeMs": 168498,
+            "endTimeMs": 187143,
+            "description": "This segment showcases the Hive backpack's versatility and features in urban settings. It begins with a woman working on a laptop in a cafe, highlighting the backpack's suitability for digital nomads. The segment continues with scenes of a woman organizing her backpack, demonstrating the detachable tech pouch feature, and adjusting the backpack straps to showcase its ergonomic design. The adaptability and style of the backpack are highlighted as a person uses it in an urban setting and walks through a city street. A woman boards a bus with the backpack, demonstrating its travel-friendly design. The segment concludes with a couple walking through a city with a bridge in the background, and the video ends with the Tropicfeel logo, emphasizing the brand identity.",
+            "segmentId": "6"
+          }
+        ]
+      }
+    ]
+  }
+}

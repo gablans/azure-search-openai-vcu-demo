@@ -9,4 +9,4 @@ if [ $# -gt 0 ]; then
   additionalArgs="$@"
 fi
 
-./.venv/bin/python ./app/backend/prepdocs.py './data/*' --verbose $additionalArgs
+./.venv/bin/python ./app/backend/prepdocs.py './data/content_understanding/content_understanding_output/*' --verbose $additionalArgs

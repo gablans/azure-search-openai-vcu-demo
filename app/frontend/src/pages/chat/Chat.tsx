@@ -45,7 +45,7 @@ const Chat = () => {
     const [seed, setSeed] = useState<number | null>(null);
     const [minimumRerankerScore, setMinimumRerankerScore] = useState<number>(0);
     const [minimumSearchScore, setMinimumSearchScore] = useState<number>(0);
-    const [retrieveCount, setRetrieveCount] = useState<number>(3);
+    const [retrieveCount, setRetrieveCount] = useState<number>(10);
     const [maxSubqueryCount, setMaxSubqueryCount] = useState<number>(10);
     const [resultsMergeStrategy, setResultsMergeStrategy] = useState<string>("interleaved");
     const [retrievalMode, setRetrievalMode] = useState<RetrievalMode>(RetrievalMode.Hybrid);
@@ -75,6 +75,8 @@ const Chat = () => {
     const [activeAnalysisPanelTab, setActiveAnalysisPanelTab] = useState<AnalysisPanelTabs | undefined>(undefined);
 
     const [selectedAnswer, setSelectedAnswer] = useState<number>(0);
+    const [activeVideoFile, setActiveVideoFile] = useState<string>();
+    const [activeTimestamp, setActiveTimestamp] = useState<string>();
     const [answers, setAnswers] = useState<[user: string, response: ChatAppResponse][]>([]);
     const [streamedAnswers, setStreamedAnswers] = useState<[user: string, response: ChatAppResponse][]>([]);
     const [speechUrls, setSpeechUrls] = useState<(string | null)[]>([]);
@@ -393,6 +395,31 @@ const Chat = () => {
         setSelectedAnswer(index);
     };
 
+    const onShowVideoPlayer = (videoFileName: string, timestamp: string = "00:00:00", index: number) => {
+        setActiveVideoFile(videoFileName);
+        setActiveTimestamp(timestamp);
+        setActiveAnalysisPanelTab(AnalysisPanelTabs.VideoPlayerTab);
+        setSelectedAnswer(index);
+    };
+
+    // Function to extract video filename from citation or context
+    const getVideoFileFromAnswer = (answer: ChatAppResponse): string | undefined => {
+        // Look for video references in data_points
+        if (answer.context?.data_points) {
+            for (const dataPoint of answer.context.data_points) {
+                // Check if the citation contains a .json file that corresponds to a video
+                if (dataPoint.includes(".json")) {
+                    // Extract the base name (e.g., "huawei.json" -> "huawei.mp4")
+                    const baseName = dataPoint.split(".json")[0].split("/").pop();
+                    if (baseName) {
+                        return `${baseName}.mp4`;
+                    }
+                }
+            }
+        }
+        return undefined;
+    };
+
     const { t, i18n } = useTranslation();
 
     return (
@@ -442,6 +469,10 @@ const Chat = () => {
                                                 onCitationClicked={c => onShowCitation(c, index)}
                                                 onThoughtProcessClicked={() => onToggleTab(AnalysisPanelTabs.ThoughtProcessTab, index)}
                                                 onSupportingContentClicked={() => onToggleTab(AnalysisPanelTabs.SupportingContentTab, index)}
+                                                onVideoPlayerClicked={() => {
+                                                    const videoFile = getVideoFileFromAnswer(streamedAnswer[1]);
+                                                    if (videoFile) onShowVideoPlayer(videoFile, "00:00:00", index);
+                                                }}
                                                 onFollowupQuestionClicked={q => makeApiRequest(q)}
                                                 showFollowupQuestions={useSuggestFollowupQuestions && answers.length - 1 === index}
                                                 showSpeechOutputAzure={showSpeechOutputAzure}
@@ -465,6 +496,10 @@ const Chat = () => {
                                                 onCitationClicked={c => onShowCitation(c, index)}
                                                 onThoughtProcessClicked={() => onToggleTab(AnalysisPanelTabs.ThoughtProcessTab, index)}
                                                 onSupportingContentClicked={() => onToggleTab(AnalysisPanelTabs.SupportingContentTab, index)}
+                                                onVideoPlayerClicked={() => {
+                                                    const videoFile = getVideoFileFromAnswer(answer[1]);
+                                                    if (videoFile) onShowVideoPlayer(videoFile, "00:00:00", index);
+                                                }}
                                                 onFollowupQuestionClicked={q => makeApiRequest(q)}
                                                 showFollowupQuestions={useSuggestFollowupQuestions && answers.length - 1 === index}
                                                 showSpeechOutputAzure={showSpeechOutputAzure}
@@ -512,6 +547,8 @@ const Chat = () => {
                         citationHeight="810px"
                         answer={answers[selectedAnswer][1]}
                         activeTab={activeAnalysisPanelTab}
+                        activeVideoFile={activeVideoFile}
+                        activeTimestamp={activeTimestamp}
                     />
                 )}
 

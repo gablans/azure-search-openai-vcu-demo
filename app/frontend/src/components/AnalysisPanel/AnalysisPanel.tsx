@@ -7,6 +7,7 @@ import { ChatAppResponse } from "../../api";
 import { AnalysisPanelTabs } from "./AnalysisPanelTabs";
 import { ThoughtProcess } from "./ThoughtProcess";
 import { MarkdownViewer } from "../MarkdownViewer";
+import { VideoPlayer } from "../VideoPlayer";
 import { useMsal } from "@azure/msal-react";
 import { getHeaders } from "../../api";
 import { useLogin, getToken } from "../../authConfig";
@@ -19,14 +20,17 @@ interface Props {
     activeCitation: string | undefined;
     citationHeight: string;
     answer: ChatAppResponse;
+    activeVideoFile?: string;
+    activeTimestamp?: string;
 }
 
 const pivotItemDisabledStyle = { disabled: true, style: { color: "grey" } };
 
-export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeight, className, onActiveTabChanged }: Props) => {
+export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeight, className, onActiveTabChanged, activeVideoFile, activeTimestamp }: Props) => {
     const isDisabledThoughtProcessTab: boolean = !answer.context.thoughts;
     const isDisabledSupportingContentTab: boolean = !answer.context.data_points;
     const isDisabledCitationTab: boolean = !activeCitation;
+    const isDisabledVideoPlayerTab: boolean = !activeVideoFile;
     const [citation, setCitation] = useState("");
 
     const client = useLogin ? useMsal().instance : undefined;
@@ -97,6 +101,19 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
                 headerButtonProps={isDisabledCitationTab ? pivotItemDisabledStyle : undefined}
             >
                 {renderFileViewer()}
+            </PivotItem>
+            <PivotItem
+                itemKey={AnalysisPanelTabs.VideoPlayerTab}
+                headerText={t("headerTexts.videoPlayer")}
+                headerButtonProps={isDisabledVideoPlayerTab ? pivotItemDisabledStyle : undefined}
+            >
+                {activeVideoFile && (
+                    <VideoPlayer 
+                        videoFileName={activeVideoFile} 
+                        timestamp={activeTimestamp || "00:00:00"}
+                        height="500px"
+                    />
+                )}
             </PivotItem>
         </Pivot>
     );

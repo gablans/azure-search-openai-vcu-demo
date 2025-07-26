@@ -1,0 +1,36 @@
+.videoContainer {
+    padding: 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.videoTitle {
+    margin-bottom: 12px;
+    color: #323130;
+    font-weight: 600;
+}
+
+.timestampInfo {
+    color: #605e5c;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.videoPlayer {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+}
+
+.errorContainer {
+    padding: 20px;
+    text-align: center;
+    background-color: #fef7f7;
+    border: 1px solid #d13438;
+    border-radius: 4px;
+}
+
+.errorText {
+    color: #d13438;
+    margin-bottom: 8px;
+}

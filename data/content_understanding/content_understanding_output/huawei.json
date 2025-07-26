@@ -1,0 +1,909 @@
+{
+  "id": "7dbdfddd-da95-4f2f-8405-77a548e336eb",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "gabeSearchAnalyzer2",
+    "apiVersion": "2025-05-01-preview",
+    "createdAt": "2025-07-25T02:14:50Z",
+    "stringEncoding": "utf8",
+    "warnings": [],
+    "contents": [
+      {
+        "markdown": "# Video: 00:00.000 => 00:55.320\nWidth: 1280\nHeight: 720\n\n## Segment 1: 00:00.600 => 00:46.000\nThe video showcases various features of a Huawei smartwatch as it is used throughout a person's day. It starts with the person waking up and checking their sleep data, followed by activity tracking while walking and running outdoors. The scene shifts to an office where the person checks their oxygen saturation and performs push-ups, with the smartwatch displaying fitness data. Later, at a laundromat, the person uses the smartwatch for a quick workout animation. The video concludes with the person at home, playing with a dog and checking the smartwatch for a stand reminder and exercise data.\n\nTranscript\n```\nWEBVTT\n\n00:00.960 --> 00:06.320\n<Speaker 1>And I'm on a roll\n```\n\nKey Frames\n- 00:00.600 ![](keyFrame.600.jpg)\n- 00:01.200 ![](keyFrame.1200.jpg)\n- 00:02.360 ![](keyFrame.2360.jpg)\n- 00:02.920 ![](keyFrame.2920.jpg)\n- 00:04.120 ![](keyFrame.4120.jpg)\n- 00:04.800 ![](keyFrame.4800.jpg)\n- 00:06.040 ![](keyFrame.6040.jpg)\n- 00:07.080 ![](keyFrame.7080.jpg)\n- 00:07.640 ![](keyFrame.7640.jpg)\n- 00:08.840 ![](keyFrame.8840.jpg)\n- 00:10.120 ![](keyFrame.10120.jpg)\n- 00:10.760 ![](keyFrame.10760.jpg)\n- 00:11.920 ![](keyFrame.11920.jpg)\n- 00:12.920 ![](keyFrame.12920.jpg)\n- 00:13.440 ![](keyFrame.13440.jpg)\n- 00:14.240 ![](keyFrame.14240.jpg)\n- 00:15.120 ![](keyFrame.15120.jpg)\n- 00:16.160 ![](keyFrame.16160.jpg)\n- 00:16.680 ![](keyFrame.16680.jpg)\n- 00:17.800 ![](keyFrame.17800.jpg)\n- 00:18.640 ![](keyFrame.18640.jpg)\n- 00:19.520 ![](keyFrame.19520.jpg)\n- 00:20.840 ![](keyFrame.20840.jpg)\n- 00:22.080 ![](keyFrame.22080.jpg)\n- 00:22.640 ![](keyFrame.22640.jpg)\n- 00:23.960 ![](keyFrame.23960.jpg)\n- 00:25.000 ![](keyFrame.25000.jpg)\n- 00:25.760 ![](keyFrame.25760.jpg)\n- 00:26.480 ![](keyFrame.26480.jpg)\n- 00:27.400 ![](keyFrame.27400.jpg)\n- 00:28.560 ![](keyFrame.28560.jpg)\n- 00:29.080 ![](keyFrame.29080.jpg)\n- 00:30.360 ![](keyFrame.30360.jpg)\n- 00:31.160 ![](keyFrame.31160.jpg)\n- 00:31.960 ![](keyFrame.31960.jpg)\n- 00:32.760 ![](keyFrame.32760.jpg)\n- 00:34.160 ![](keyFrame.34160.jpg)\n- 00:35.400 ![](keyFrame.35400.jpg)\n- 00:36.040 ![](keyFrame.36040.jpg)\n- 00:36.680 ![](keyFrame.36680.jpg)\n- 00:37.680 ![](keyFrame.37680.jpg)\n- 00:38.640 ![](keyFrame.38640.jpg)\n- 00:39.840 ![](keyFrame.39840.jpg)\n- 00:40.400 ![](keyFrame.40400.jpg)\n- 00:41.760 ![](keyFrame.41760.jpg)\n- 00:42.520 ![](keyFrame.42520.jpg)\n- 00:43.280 ![](keyFrame.43280.jpg)\n- 00:44.040 ![](keyFrame.44040.jpg)\n- 00:44.800 ![](keyFrame.44800.jpg)\n- 00:46.000 ![](keyFrame.46000.jpg)\n\n## Segment 2: 00:46.000 => 00:54.840\nThe segment highlights the customization options and features of the Huawei Watch Fit. It begins with a person using the smartwatch for a quick workout animation at a laundromat, followed by exercising at home with a dog. The smartwatch displays various fitness metrics. The segment concludes with a showcase of the watch's colorful soft straps and customizable watch faces, along with a close-up of different Huawei Watch Fit models, emphasizing its long battery life and vivid display.\n\n\n\nKey Frames\n- 00:46.000 ![](keyFrame.46000.jpg)\n- 00:46.440 ![](keyFrame.46440.jpg)\n- 00:46.720 ![](keyFrame.46720.jpg)\n- 00:47.280 ![](keyFrame.47280.jpg)\n- 00:47.880 ![](keyFrame.47880.jpg)\n- 00:48.800 ![](keyFrame.48800.jpg)\n- 00:49.600 ![](keyFrame.49600.jpg)\n- 00:51.280 ![](keyFrame.51280.jpg)\n- 00:52.120 ![](keyFrame.52120.jpg)\n- 00:52.960 ![](keyFrame.52960.jpg)\n- 00:54.320 ![](keyFrame.54320.jpg)\n- 00:54.840 ![](keyFrame.54840.jpg)",
+        "fields": {
+          "Segments": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "1"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Morning routine and fitness tracking with a smartwatch."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "1"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is waking up in bed, wearing a smartwatch that displays the time and an alarm notification."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:00.600"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:02.920"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "bed (center), pillow (upper-left), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "get up 07:00 AM"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "2"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "The smartwatch displays sleep monitoring data, indicating the user had 8 hours and 30 minutes of sleep."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:04.120"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:06.040"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "smartwatch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei TruSleep 2.0"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "HUAWEI TruSleep™ 2.0 Sleeping Monitoring"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "3"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is seen walking outside, checking their smartwatch for activity tracking data."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:07.640"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:10.760"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "stairs (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "All Day Activity Tracking"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "4"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is running up the stairs, with the smartwatch displaying step count and heart rate data."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:12.920"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:14.240"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "stairs (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "5"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is in an office setting, checking their smartwatch for oxygen saturation levels."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:17.800"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:20.840"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "desk (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Oxygen Saturation Detection"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "6"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is doing push-ups in an office, with the smartwatch displaying calories burned and heart rate."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.080"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:25.000"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "desk (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei TruSeen 4.0"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "HUAWEI TruSeen™ 4.0 Heart Rate Monitoring"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "7"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is at a laundromat, using their smartwatch to start a quick workout animation."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:25.760"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:29.080"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "washing machine (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Quick-Workout Animations"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "8"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is exercising in a laundromat, with the smartwatch displaying heart rate and calories burned."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:30.360"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:32.760"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "washing machines (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "9"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is at home, playing with a dog, and checking their smartwatch for a stand reminder."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:36.680"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:40.400"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "dog (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Stand Reminder"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "10"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is exercising at home with a dog, while the smartwatch displays heart rate, duration, and calories burned."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:41.760"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:44.800"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "dog (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "2"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Smartwatch customization and features demonstration."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "11"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is at a laundromat, using their smartwatch to start a quick workout animation."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:28.560"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:29.080"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Quick-Workout Animations"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "12"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is exercising in a laundromat, with the smartwatch displaying heart rate and calories burned."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:30.360"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:32.760"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "washing machines (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "13"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is at home, playing with a dog, and checking their smartwatch for a stand reminder."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:36.680"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:40.400"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "dog (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Stand Reminder"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "14"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is exercising at home with a dog, while the smartwatch displays heart rate, duration, and calories burned."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:41.760"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:44.800"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "dog (center), smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "15"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A person is checking their smartwatch in various settings, showcasing colorful soft straps and customizable watch faces."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:46.000"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:49.600"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "smartwatch (center-right)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center-right)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch Fit"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "Colorful Soft Straps, Customise Your Watch Face"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "16"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A close-up of different Huawei Watch Fit models, highlighting features like 10 days battery life and vivid AMOLED display."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:51.280"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:54.320"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "smartwatch (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Huawei"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Huawei (center)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Huawei Watch Fit"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "10 days battery life, Quick-Workout Animations, 1.64\" Vivid AMOLED Display"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "audioVisual",
+        "startTimeMs": 0,
+        "endTimeMs": 55320,
+        "width": 1280,
+        "height": 720,
+        "KeyFrameTimesMs": [
+          600,
+          1200,
+          2360,
+          2920,
+          4120,
+          4800,
+          6040,
+          7080,
+          7640,
+          8840,
+          10120,
+          10760,
+          11920,
+          12920,
+          13440,
+          14240,
+          15120,
+          16160,
+          16680,
+          17800,
+          18640,
+          19520,
+          20840,
+          22080,
+          22640,
+          23960,
+          25000,
+          25760,
+          26480,
+          27400,
+          28560,
+          29080,
+          30360,
+          31160,
+          31960,
+          32760,
+          34160,
+          35400,
+          36040,
+          36680,
+          37680,
+          38640,
+          39840,
+          40400,
+          41760,
+          42520,
+          43280,
+          44040,
+          44800,
+          46000,
+          46440,
+          46720,
+          47280,
+          47880,
+          48800,
+          49600,
+          51280,
+          52120,
+          52960,
+          54320,
+          54840
+        ],
+        "transcriptPhrases": [
+          {
+            "speaker": "Speaker 1",
+            "startTimeMs": 960,
+            "endTimeMs": 6320,
+            "text": "And I'm on a roll",
+            "words": []
+          }
+        ],
+        "cameraShotTimesMs": [
+          1800,
+          3440,
+          5520,
+          6520,
+          8160,
+          9480,
+          11440,
+          12400,
+          13920,
+          14560,
+          15640,
+          17200,
+          18360,
+          18920,
+          20120,
+          21520,
+          23200,
+          24680,
+          25280,
+          26240,
+          26720,
+          28040,
+          29560,
+          33520,
+          34760,
+          37360,
+          38000,
+          39280,
+          41000,
+          45680,
+          46280,
+          46560,
+          46840,
+          47720,
+          48000,
+          50440,
+          53800
+        ],
+        "segments": [
+          {
+            "startTimeMs": 600,
+            "endTimeMs": 46000,
+            "description": "The video showcases various features of a Huawei smartwatch as it is used throughout a person's day. It starts with the person waking up and checking their sleep data, followed by activity tracking while walking and running outdoors. The scene shifts to an office where the person checks their oxygen saturation and performs push-ups, with the smartwatch displaying fitness data. Later, at a laundromat, the person uses the smartwatch for a quick workout animation. The video concludes with the person at home, playing with a dog and checking the smartwatch for a stand reminder and exercise data.",
+            "segmentId": "1"
+          },
+          {
+            "startTimeMs": 46000,
+            "endTimeMs": 54840,
+            "description": "The segment highlights the customization options and features of the Huawei Watch Fit. It begins with a person using the smartwatch for a quick workout animation at a laundromat, followed by exercising at home with a dog. The smartwatch displays various fitness metrics. The segment concludes with a showcase of the watch's colorful soft straps and customizable watch faces, along with a close-up of different Huawei Watch Fit models, emphasizing its long battery life and vivid display.",
+            "segmentId": "2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -22,6 +22,7 @@ interface Props {
     onCitationClicked: (filePath: string) => void;
     onThoughtProcessClicked: () => void;
     onSupportingContentClicked: () => void;
+    onVideoPlayerClicked?: () => void;
     onFollowupQuestionClicked?: (question: string) => void;
     showFollowupQuestions?: boolean;
     showSpeechOutputBrowser?: boolean;
@@ -37,6 +38,7 @@ export const Answer = ({
     onCitationClicked,
     onThoughtProcessClicked,
     onSupportingContentClicked,
+    onVideoPlayerClicked,
     onFollowupQuestionClicked,
     showFollowupQuestions,
     showSpeechOutputAzure,
@@ -90,6 +92,16 @@ export const Answer = ({
                             onClick={() => onSupportingContentClicked()}
                             disabled={!answer.context.data_points || isStreaming}
                         />
+                        {onVideoPlayerClicked && (
+                            <IconButton
+                                style={{ color: "black" }}
+                                iconProps={{ iconName: "Video" }}
+                                title={t("tooltips.showVideoPlayer")}
+                                ariaLabel={t("tooltips.showVideoPlayer")}
+                                onClick={() => onVideoPlayerClicked()}
+                                disabled={isStreaming}
+                            />
+                        )}
                         {showSpeechOutputAzure && (
                             <SpeechOutputAzure answer={sanitizedAnswerHtml} index={index} speechConfig={speechConfig} isStreaming={isStreaming} />
                         )}

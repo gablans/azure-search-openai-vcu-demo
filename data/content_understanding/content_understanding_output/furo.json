@@ -1,0 +1,2036 @@
+{
+  "id": "2eb0a7ba-f9b9-4345-a2dc-16c3d8dfb470",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "gabeSearchAnalyzer2",
+    "apiVersion": "2025-05-01-preview",
+    "createdAt": "2025-07-25T02:06:00Z",
+    "stringEncoding": "utf8",
+    "warnings": [],
+    "contents": [
+      {
+        "markdown": "# Video: 00:00.000 => 01:00.000\nWidth: 1280\nHeight: 720\n\n## Segment 1: 00:00.778 => 00:32.068\nThe video showcases Furo Systems bicycles in various settings, highlighting their features and versatility. It begins with a woman standing with a bicycle in an urban area, followed by another woman in athletic wear with a bicycle on a scenic road. The video transitions to a man riding through urban landscapes, emphasizing the bicycle's performance and features like peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a man parking the bicycle, showcasing its removable battery feature.\n\n\n\nKey Frames\n- 00:00.778 ![](keyFrame.778.jpg)\n- 00:01.556 ![](keyFrame.1556.jpg)\n- 00:02.826 ![](keyFrame.2826.jpg)\n- 00:03.358 ![](keyFrame.3358.jpg)\n- 00:04.587 ![](keyFrame.4587.jpg)\n- 00:05.324 ![](keyFrame.5324.jpg)\n- 00:06.594 ![](keyFrame.6594.jpg)\n- 00:07.126 ![](keyFrame.7126.jpg)\n- 00:08.314 ![](keyFrame.8314.jpg)\n- 00:09.010 ![](keyFrame.9010.jpg)\n- 00:10.485 ![](keyFrame.10485.jpg)\n- 00:11.304 ![](keyFrame.11304.jpg)\n- 00:12.860 ![](keyFrame.12860.jpg)\n- 00:13.638 ![](keyFrame.13638.jpg)\n- 00:14.416 ![](keyFrame.14416.jpg)\n- 00:15.195 ![](keyFrame.15195.jpg)\n- 00:16.751 ![](keyFrame.16751.jpg)\n- 00:17.447 ![](keyFrame.17447.jpg)\n- 00:18.799 ![](keyFrame.18799.jpg)\n- 00:19.495 ![](keyFrame.19495.jpg)\n- 00:20.191 ![](keyFrame.20191.jpg)\n- 00:21.461 ![](keyFrame.21461.jpg)\n- 00:22.608 ![](keyFrame.22608.jpg)\n- 00:23.877 ![](keyFrame.23877.jpg)\n- 00:25.270 ![](keyFrame.25270.jpg)\n- 00:26.048 ![](keyFrame.26048.jpg)\n- 00:27.522 ![](keyFrame.27522.jpg)\n- 00:28.915 ![](keyFrame.28915.jpg)\n- 00:29.693 ![](keyFrame.29693.jpg)\n- 00:31.249 ![](keyFrame.31249.jpg)\n- 00:32.068 ![](keyFrame.32068.jpg)\n\n## Segment 2: 00:32.068 => 00:52.669\nThe video showcases Furo Systems bicycles in various settings, highlighting their features and versatility. It begins with a woman standing with a bicycle in an urban area, followed by another woman in athletic wear with a bicycle on a scenic road. The video transitions to a man riding through urban landscapes, emphasizing the bicycle's performance and features like peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a man parking the bicycle, showcasing its removable battery feature.\n\n\n\nKey Frames\n- 00:32.068 ![](keyFrame.32068.jpg)\n- 00:33.502 ![](keyFrame.33502.jpg)\n- 00:34.689 ![](keyFrame.34689.jpg)\n- 00:36.082 ![](keyFrame.36082.jpg)\n- 00:36.860 ![](keyFrame.36860.jpg)\n- 00:37.638 ![](keyFrame.37638.jpg)\n- 00:38.949 ![](keyFrame.38949.jpg)\n- 00:39.481 ![](keyFrame.39481.jpg)\n- 00:40.874 ![](keyFrame.40874.jpg)\n- 00:41.693 ![](keyFrame.41693.jpg)\n- 00:43.085 ![](keyFrame.43085.jpg)\n- 00:44.314 ![](keyFrame.44314.jpg)\n- 00:45.706 ![](keyFrame.45706.jpg)\n- 00:46.485 ![](keyFrame.46485.jpg)\n- 00:47.836 ![](keyFrame.47836.jpg)\n- 00:48.410 ![](keyFrame.48410.jpg)\n- 00:49.679 ![](keyFrame.49679.jpg)\n- 00:51.113 ![](keyFrame.51113.jpg)\n- 00:51.891 ![](keyFrame.51891.jpg)\n- 00:52.669 ![](keyFrame.52669.jpg)\n\n## Segment 3: 00:52.669 => 00:59.713\nThe segment continues to highlight the features of Furo Systems bicycles, showcasing their use in various environments. It includes scenes of a woman riding at dusk, close-ups of the bicycle's components like the wheel, LCD screen, and brakes, and emphasizes features such as peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a woman standing with the bicycle against a stone wall, displaying the brand's website.\n\n\n\nKey Frames\n- 00:52.669 ![](keyFrame.52669.jpg)\n- 00:54.266 ![](keyFrame.54266.jpg)\n- 00:55.126 ![](keyFrame.55126.jpg)\n- 00:55.986 ![](keyFrame.55986.jpg)\n- 00:56.846 ![](keyFrame.56846.jpg)\n- 00:57.706 ![](keyFrame.57706.jpg)\n- 00:58.567 ![](keyFrame.58567.jpg)\n- 00:59.713 ![](keyFrame.59713.jpg)",
+        "fields": {
+          "Segments": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "1"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Introduction of Furo Systems bicycles in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "1"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman stands with a Furo Systems bicycle on a platform in an urban setting."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:00.778"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:01.556"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "2"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman in athletic wear stands with a Furo Systems bicycle on a road with a scenic background, with the text 'THE AVENTA' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:02.826"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:03.358"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems Aventa"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "THE AVENTA"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "3"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle through a scenic landscape."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:04.587"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:05.324"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "4"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle through an urban area with columns."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:06.594"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:09.010"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "5"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A red logo animation appears on a building facade."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:10.485"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:11.304"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Building facade (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (animated logo)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "6"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man walks with a Furo Systems bicycle in an urban residential area, with the Furo Systems logo displayed prominently."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:12.860"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:17.447"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on screen)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "7"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle past a historic building."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:18.799"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:21.461"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "8"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle on a road at dusk."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.608"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.608"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "9"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man carries a Furo Systems bicycle down steps of a large building."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:23.877"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:23.877"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "10"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle wheel in motion on a road."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:25.270"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:26.048"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "11"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle through a scenic landscape."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:27.522"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:27.522"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "12"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man prepares to ride a Furo Systems bicycle at night, with the rear light illuminated."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:28.915"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:32.068"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "2"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Introduction of Furo Systems bicycles in various settings."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "1"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman stands with a Furo Systems bicycle on a platform in an urban setting."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:00.778"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:01.556"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "2"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman in athletic wear stands with a Furo Systems bicycle on a road with a scenic background, with the text 'THE AVENTA' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:02.826"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:03.358"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems Aventa"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "THE AVENTA"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "3"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle through a scenic landscape."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:04.587"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:05.324"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "4"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle through an urban area with columns."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:06.594"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:09.010"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "5"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A red logo animation appears on a building facade."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:10.485"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:11.304"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Building facade (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (animated logo)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "6"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man walks with a Furo Systems bicycle in an urban residential area, with the Furo Systems logo displayed prominently."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:12.860"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:17.447"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on screen)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "7"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle past a historic building."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:18.799"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:21.461"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "8"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle on a road at dusk."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.608"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:22.608"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "9"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man carries a Furo Systems bicycle down steps of a large building."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:23.877"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:23.877"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "10"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle wheel in motion on a road."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:25.270"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:26.048"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "11"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle through a scenic landscape."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:27.522"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:27.522"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "12"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man prepares to ride a Furo Systems bicycle at night, with the rear light illuminated."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:28.915"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:32.068"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "13"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle on a road at dusk."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:33.502"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:33.502"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "14"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a Furo Systems bicycle wheel in motion, highlighting the brand logo."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:34.689"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:36.860"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "15"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle through an urban area, with text highlighting features like '250W-500W PEAK POWER'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:38.949"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:41.693"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "250W-500W PEAK POWER"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "16"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's smart LCD screen displaying speed, with text 'SMART LCD SCREEN'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:43.085"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:44.314"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle LCD screen (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "SMART LCD SCREEN"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "17"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's hydraulic disk brakes, with text 'TEKTRO HYDRAULIC DISK BRAKES'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:45.706"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:46.485"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle brakes (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "TEKTRO HYDRAULIC DISK BRAKES"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "18"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's rear wheel in motion, with text '9 SPEEDS'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:47.836"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:48.410"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "9 SPEEDS"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "19"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman carries a Furo Systems bicycle up steps, with text '16.5 KGS'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:49.679"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:49.679"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "16.5 KGS"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "20"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man parks a Furo Systems bicycle next to another bicycle, with text '504WH REMOVABLE BATTERY'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:51.113"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:52.669"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "504WH REMOVABLE BATTERY"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "SegmentId": {
+                    "type": "string",
+                    "valueString": "3"
+                  },
+                  "SegmentInfo": {
+                    "type": "string",
+                    "valueString": "Continuation of Furo Systems bicycle features and usage in different environments."
+                  },
+                  "Scenes": {
+                    "type": "array",
+                    "valueArray": [
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "13"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman rides a Furo Systems bicycle on a road at dusk."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:33.502"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:33.502"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "14"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a Furo Systems bicycle wheel in motion, highlighting the brand logo."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:34.689"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:36.860"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": ""
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "15"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man rides a Furo Systems bicycle through an urban area, with text highlighting features like '250W-500W PEAK POWER'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:38.949"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:41.693"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "250W-500W PEAK POWER"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "16"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's smart LCD screen displaying speed, with text 'SMART LCD SCREEN'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:43.085"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:44.314"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle LCD screen (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "SMART LCD SCREEN"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "17"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's hydraulic disk brakes, with text 'TEKTRO HYDRAULIC DISK BRAKES'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:45.706"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:46.485"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle brakes (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "TEKTRO HYDRAULIC DISK BRAKES"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "18"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "Close-up of a bicycle's rear wheel in motion, with text '9 SPEEDS'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:47.836"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:48.410"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle wheel (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "9 SPEEDS"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "19"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman carries a Furo Systems bicycle up steps, with text '16.5 KGS'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:49.679"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:49.679"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "16.5 KGS"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "20"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A man parks a Furo Systems bicycle next to another bicycle, with text '504WH REMOVABLE BATTERY'."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:51.113"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:52.669"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Man (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "504WH REMOVABLE BATTERY"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "valueObject": {
+                          "SceneId": {
+                            "type": "string",
+                            "valueString": "21"
+                          },
+                          "Description": {
+                            "type": "string",
+                            "valueString": "A woman stands with a Furo Systems bicycle against a stone wall, with the website 'WWW.FUROSYSTEMS.COM' displayed."
+                          },
+                          "StartTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:54.266"
+                          },
+                          "EndTimestamp": {
+                            "type": "string",
+                            "valueString": "00:00:59.713"
+                          },
+                          "Objects": {
+                            "type": "string",
+                            "valueString": "Bicycle (center), Woman (center)"
+                          },
+                          "Brands": {
+                            "type": "string",
+                            "valueString": "Furo Systems"
+                          },
+                          "BrandLogos": {
+                            "type": "string",
+                            "valueString": "Furo Systems (on bicycle frame)"
+                          },
+                          "AdditionalBrands": {
+                            "type": "string",
+                            "valueString": ""
+                          },
+                          "Products": {
+                            "type": "string",
+                            "valueString": "Furo Systems bicycle"
+                          },
+                          "MarketingMessaging": {
+                            "type": "string",
+                            "valueString": "WWW.FUROSYSTEMS.COM"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "audioVisual",
+        "startTimeMs": 0,
+        "endTimeMs": 60000,
+        "width": 1280,
+        "height": 720,
+        "KeyFrameTimesMs": [
+          778,
+          1556,
+          2826,
+          3358,
+          4587,
+          5324,
+          6594,
+          7126,
+          8314,
+          9010,
+          10485,
+          11304,
+          12860,
+          13638,
+          14416,
+          15195,
+          16751,
+          17447,
+          18799,
+          19495,
+          20191,
+          21461,
+          22608,
+          23877,
+          25270,
+          26048,
+          27522,
+          28915,
+          29693,
+          31249,
+          32068,
+          33502,
+          34689,
+          36082,
+          36860,
+          37638,
+          38949,
+          39481,
+          40874,
+          41693,
+          43085,
+          44314,
+          45706,
+          46485,
+          47836,
+          48410,
+          49679,
+          51113,
+          51891,
+          52669,
+          54266,
+          55126,
+          55986,
+          56846,
+          57706,
+          58567,
+          59713
+        ],
+        "cameraShotTimesMs": [
+          2292,
+          3833,
+          6042,
+          7625,
+          9667,
+          12083,
+          16042,
+          18083,
+          20958,
+          21958,
+          23250,
+          24500,
+          26875,
+          28125,
+          30417,
+          32875,
+          34083,
+          35292,
+          38417,
+          40042,
+          42458,
+          43667,
+          44917,
+          47250,
+          49000,
+          50333,
+          53417,
+          59417
+        ],
+        "segments": [
+          {
+            "startTimeMs": 778,
+            "endTimeMs": 32068,
+            "description": "The video showcases Furo Systems bicycles in various settings, highlighting their features and versatility. It begins with a woman standing with a bicycle in an urban area, followed by another woman in athletic wear with a bicycle on a scenic road. The video transitions to a man riding through urban landscapes, emphasizing the bicycle's performance and features like peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a man parking the bicycle, showcasing its removable battery feature.",
+            "segmentId": "1"
+          },
+          {
+            "startTimeMs": 32068,
+            "endTimeMs": 52669,
+            "description": "The video showcases Furo Systems bicycles in various settings, highlighting their features and versatility. It begins with a woman standing with a bicycle in an urban area, followed by another woman in athletic wear with a bicycle on a scenic road. The video transitions to a man riding through urban landscapes, emphasizing the bicycle's performance and features like peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a man parking the bicycle, showcasing its removable battery feature.",
+            "segmentId": "2"
+          },
+          {
+            "startTimeMs": 52669,
+            "endTimeMs": 59713,
+            "description": "The segment continues to highlight the features of Furo Systems bicycles, showcasing their use in various environments. It includes scenes of a woman riding at dusk, close-ups of the bicycle's components like the wheel, LCD screen, and brakes, and emphasizes features such as peak power, smart LCD screen, hydraulic disk brakes, and lightweight design. The segment concludes with a woman standing with the bicycle against a stone wall, displaying the brand's website.",
+            "segmentId": "3"
+          }
+        ]
+      }
+    ]
+  }
+}

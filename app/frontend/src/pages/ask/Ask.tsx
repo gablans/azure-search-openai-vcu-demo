@@ -29,7 +29,7 @@ export function Component(): JSX.Element {
     const [minimumRerankerScore, setMinimumRerankerScore] = useState<number>(0);
     const [minimumSearchScore, setMinimumSearchScore] = useState<number>(0);
     const [retrievalMode, setRetrievalMode] = useState<RetrievalMode>(RetrievalMode.Hybrid);
-    const [retrieveCount, setRetrieveCount] = useState<number>(3);
+    const [retrieveCount, setRetrieveCount] = useState<number>(10);
     const [maxSubqueryCount, setMaxSubqueryCount] = useState<number>(10);
     const [resultsMergeStrategy, setResultsMergeStrategy] = useState<string>("interleaved");
     const [useSemanticRanker, setUseSemanticRanker] = useState<boolean>(true);
@@ -77,6 +77,8 @@ export function Component(): JSX.Element {
 
     const [activeCitation, setActiveCitation] = useState<string>();
     const [activeAnalysisPanelTab, setActiveAnalysisPanelTab] = useState<AnalysisPanelTabs | undefined>(undefined);
+    const [activeVideoFile, setActiveVideoFile] = useState<string>();
+    const [activeTimestamp, setActiveTimestamp] = useState<string>();
 
     const client = useLogin ? useMsal().instance : undefined;
     const { loggedIn } = useContext(LoginContext);
@@ -267,6 +269,30 @@ export function Component(): JSX.Element {
         }
     };
 
+    const onShowVideoPlayer = (videoFileName: string, timestamp: string = "00:00:00") => {
+        setActiveVideoFile(videoFileName);
+        setActiveTimestamp(timestamp);
+        setActiveAnalysisPanelTab(AnalysisPanelTabs.VideoPlayerTab);
+    };
+
+    // Function to extract video filename from citation or context
+    const getVideoFileFromAnswer = (answer: ChatAppResponse): string | undefined => {
+        // Look for video references in data_points
+        if (answer.context?.data_points) {
+            for (const dataPoint of answer.context.data_points) {
+                // Check if the citation contains a .json file that corresponds to a video
+                if (dataPoint.includes(".json")) {
+                    // Extract the base name (e.g., "huawei.json" -> "huawei.mp4")
+                    const baseName = dataPoint.split(".json")[0].split("/").pop();
+                    if (baseName) {
+                        return `${baseName}.mp4`;
+                    }
+                }
+            }
+        }
+        return undefined;
+    };
+
     const onUseOidSecurityFilterChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
         setUseOidSecurityFilter(!!checked);
     };
@@ -317,6 +343,10 @@ export function Component(): JSX.Element {
                             onCitationClicked={x => onShowCitation(x)}
                             onThoughtProcessClicked={() => onToggleTab(AnalysisPanelTabs.ThoughtProcessTab)}
                             onSupportingContentClicked={() => onToggleTab(AnalysisPanelTabs.SupportingContentTab)}
+                            onVideoPlayerClicked={() => {
+                                const videoFile = getVideoFileFromAnswer(answer);
+                                if (videoFile) onShowVideoPlayer(videoFile, "00:00:00");
+                            }}
                             showSpeechOutputAzure={showSpeechOutputAzure}
                             showSpeechOutputBrowser={showSpeechOutputBrowser}
                         />
@@ -335,6 +365,8 @@ export function Component(): JSX.Element {
                         citationHeight="600px"
                         answer={answer}
                         activeTab={activeAnalysisPanelTab}
+                        activeVideoFile={activeVideoFile}
+                        activeTimestamp={activeTimestamp}
                     />
                 )}
             </div>
