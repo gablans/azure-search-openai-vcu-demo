@@ -41,11 +41,11 @@ const Chat = () => {
     const [isConfigPanelOpen, setIsConfigPanelOpen] = useState(false);
     const [isHistoryPanelOpen, setIsHistoryPanelOpen] = useState(false);
     const [promptTemplate, setPromptTemplate] = useState<string>("");
-    const [temperature, setTemperature] = useState<number>(0.3);
+    const [temperature, setTemperature] = useState<number>(0.7);
     const [seed, setSeed] = useState<number | null>(null);
     const [minimumRerankerScore, setMinimumRerankerScore] = useState<number>(0);
     const [minimumSearchScore, setMinimumSearchScore] = useState<number>(0);
-    const [retrieveCount, setRetrieveCount] = useState<number>(10);
+    const [retrieveCount, setRetrieveCount] = useState<number>(20);
     const [maxSubqueryCount, setMaxSubqueryCount] = useState<number>(10);
     const [resultsMergeStrategy, setResultsMergeStrategy] = useState<string>("interleaved");
     const [retrievalMode, setRetrievalMode] = useState<RetrievalMode>(RetrievalMode.Hybrid);
@@ -95,6 +95,7 @@ const Chat = () => {
     const [showChatHistoryCosmos, setShowChatHistoryCosmos] = useState<boolean>(false);
     const [showAgenticRetrievalOption, setShowAgenticRetrievalOption] = useState<boolean>(false);
     const [useAgenticRetrieval, setUseAgenticRetrieval] = useState<boolean>(false);
+    const [useStructuredResponse, setUseStructuredResponse] = useState<boolean>(true);
 
     const audio = useRef(new Audio()).current;
     const [isPlaying, setIsPlaying] = useState(false);
@@ -139,7 +140,7 @@ const Chat = () => {
             setShowAgenticRetrievalOption(config.showAgenticRetrievalOption);
             setUseAgenticRetrieval(config.showAgenticRetrievalOption);
             if (config.showAgenticRetrievalOption) {
-                setRetrieveCount(10);
+                setRetrieveCount(20);
             }
         });
     };
@@ -239,6 +240,7 @@ const Chat = () => {
                         gpt4v_input: gpt4vInput,
                         language: i18n.language,
                         use_agentic_retrieval: useAgenticRetrieval,
+                        use_structured_response: useStructuredResponse,
                         ...(seed !== null ? { seed: seed } : {})
                     }
                 },
@@ -246,14 +248,17 @@ const Chat = () => {
                 session_state: answers.length ? answers[answers.length - 1][1].session_state : null
             };
 
-            const response = await chatApi(request, shouldStream, token);
+            // Disable streaming for structured responses to ensure proper JSON parsing
+            const effectiveStreaming = shouldStream && !useStructuredResponse;
+            const response = await chatApi(request, effectiveStreaming, token);
+
             if (!response.body) {
                 throw Error("No response body");
             }
             if (response.status > 299 || !response.ok) {
                 throw Error(`Request failed with status ${response.status}`);
             }
-            if (shouldStream) {
+            if (effectiveStreaming) {
                 const parsedResponse: ChatAppResponse = await handleAsyncRequest(question, answers, response.body);
                 setAnswers([...answers, [question, parsedResponse]]);
                 if (typeof parsedResponse.session_state === "string" && parsedResponse.session_state !== "") {
@@ -367,6 +372,10 @@ const Chat = () => {
                 break;
             case "useAgenticRetrieval":
                 setUseAgenticRetrieval(value);
+                break;
+            case "useStructuredResponse":
+                setUseStructuredResponse(value);
+                break;
         }
     };
 
@@ -405,10 +414,9 @@ const Chat = () => {
     // Function to extract video filename from citation or context
     const getVideoFileFromAnswer = (answer: ChatAppResponse): string | undefined => {
         // Look for video references in data_points
-        if (answer.context?.data_points) {
+        if (answer.context?.data_points && Array.isArray(answer.context.data_points)) {
             for (const dataPoint of answer.context.data_points) {
-                // Check if the citation contains a .json file that corresponds to a video
-                if (dataPoint.includes(".json")) {
+                if (typeof dataPoint === "string" && dataPoint.includes(".json")) {
                     // Extract the base name (e.g., "huawei.json" -> "huawei.mp4")
                     const baseName = dataPoint.split(".json")[0].split("/").pop();
                     if (baseName) {
@@ -473,6 +481,9 @@ const Chat = () => {
                                                     const videoFile = getVideoFileFromAnswer(streamedAnswer[1]);
                                                     if (videoFile) onShowVideoPlayer(videoFile, "00:00:00", index);
                                                 }}
+                                                onVideoTimestampClicked={(videoFile, timestamp) => {
+                                                    onShowVideoPlayer(videoFile, timestamp, index);
+                                                }}
                                                 onFollowupQuestionClicked={q => makeApiRequest(q)}
                                                 showFollowupQuestions={useSuggestFollowupQuestions && answers.length - 1 === index}
                                                 showSpeechOutputAzure={showSpeechOutputAzure}
@@ -499,6 +510,9 @@ const Chat = () => {
                                                 onVideoPlayerClicked={() => {
                                                     const videoFile = getVideoFileFromAnswer(answer[1]);
                                                     if (videoFile) onShowVideoPlayer(videoFile, "00:00:00", index);
+                                                }}
+                                                onVideoTimestampClicked={(videoFile, timestamp) => {
+                                                    onShowVideoPlayer(videoFile, timestamp, index);
                                                 }}
                                                 onFollowupQuestionClicked={q => makeApiRequest(q)}
                                                 showFollowupQuestions={useSuggestFollowupQuestions && answers.length - 1 === index}
@@ -610,6 +624,7 @@ const Chat = () => {
                         showSuggestFollowupQuestions={true}
                         showAgenticRetrievalOption={showAgenticRetrievalOption}
                         useAgenticRetrieval={useAgenticRetrieval}
+                        useStructuredResponse={useStructuredResponse}
                         onChange={handleSettingsChange}
                     />
                     {useLogin && <TokenClaimsDisplay />}

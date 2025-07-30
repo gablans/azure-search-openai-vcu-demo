@@ -1,0 +1,108 @@
+.structuredAnswer {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    margin-bottom: 16px;
+}
+
+.descriptionSection {
+    margin-bottom: 16px;
+}
+
+.description {
+    color: var(--colorNeutralForeground1);
+    line-height: 1.5;
+}
+
+.sceneReferencesSection {
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-weight: 600;
+    color: var(--colorNeutralForeground1);
+    margin-bottom: 8px;
+}
+
+.sceneList {
+    gap: 12px;
+}
+
+.sceneItem {
+    background-color: var(--colorNeutralBackground2);
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--colorNeutralStroke3);
+}
+
+.sceneHeader {
+    margin-bottom: 6px;
+}
+
+.timestampLink {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--colorBrandForeground1);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.timestampLink:hover {
+    color: var(--colorBrandForeground1Hover);
+    text-decoration: underline;
+}
+
+.playIcon {
+    color: var(--colorBrandForeground1);
+    width: 16px;
+    height: 16px;
+}
+
+.timestampText {
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    font-weight: 500;
+}
+
+.sceneDescription {
+    color: var(--colorNeutralForeground2);
+    line-height: 1.4;
+    padding-left: 20px;
+}
+
+.featuresSection,
+.brandsSection {
+    margin-bottom: 12px;
+}
+
+.featureTag {
+    background-color: var(--colorBrandBackground2);
+    color: var(--colorBrandForeground2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.brandTag {
+    background-color: var(--colorPalettePurpleBackground2);
+    color: var(--colorPalettePurpleForeground2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .structuredAnswer {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .sceneItem {
+        padding: 8px;
+    }
+
+    .sceneDescription {
+        padding-left: 16px;
+    }
+}

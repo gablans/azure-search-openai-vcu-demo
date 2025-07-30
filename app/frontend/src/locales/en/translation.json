@@ -107,6 +107,7 @@
         },
         "useSuggestFollowupQuestions": "Suggest follow-up questions",
         "useAgenticRetrieval": "Use agentic retrieval",
+        "useStructuredResponse": "Use structured video responses",
         "useGPT4V": "Use GPT vision model",
         "gpt4VInput": {
             "label": "GPT vision model inputs",
@@ -176,6 +177,7 @@
         "streamChat": "Continuously streams the response to the chat UI as it is generated.",
         "useOidSecurityFilter": "Filter search results based on the authenticated user's OID.",
         "useGroupsSecurityFilter": "Filter search results based on the authenticated user's groups.",
-        "useAgenticRetrieval": "Use agentic retrieval from Azure AI Search for multi-query planning. Always uses semantic ranker."
+        "useAgenticRetrieval": "Use agentic retrieval from Azure AI Search for multi-query planning. Always uses semantic ranker.",
+        "useStructuredResponse": "Enable structured JSON responses for video content with clickable timestamps and organized information sections."
     }
 }

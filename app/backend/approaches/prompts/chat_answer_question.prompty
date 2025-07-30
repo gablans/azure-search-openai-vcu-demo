@@ -4,17 +4,17 @@ description: Search and analyze advertising content, brands, products, and marke
 model:
     api: chat
 sample:
-    user_query: Find advertisements featuring smartphone brands and compare their marketing strategies
+    user_query: Find video scenes showing backpack features and travel functionality
     include_follow_up_questions: true
     past_messages:
         - role: user
-          content: "What luxury car brands appear most frequently in advertisements?"
+          content: "What travel gear appears most frequently in the video content?"
         - role: assistant
-          content: "Based on the advertising analysis data, BMW appears in 89 advertisements, Mercedes-Benz in 76 commercials, and Audi in 65 spots across the luxury automotive campaign dataset. BMW focuses on performance and innovation themes, Mercedes-Benz emphasizes elegance and heritage, while Audi targets technology and precision messaging [luxury_auto_analysis.json][brand_frequency_2024.json][campaign_themes.json]."
+          content: "Based on the video analysis data, Hive backpacks appear in 44 scenes across the Tropicfeel video, Furo Systems bicycles in 20 scenes, and Huawei smartwatches in 16 scenes. The scene from 00:00:48 - 00:00:50 shows the Hive backpack's smart packing cube feature, while the scene from 00:01:14 - 00:01:15 demonstrates the superior comfort with thermoformed back panel [tropicfeel.json]. Furo Systems bicycles are prominently featured from 00:00:12 - 00:00:17 showing urban mobility, and from 00:00:45 - 00:00:46 highlighting hydraulic disk brake technology [furo.json]."
     text_sources:
-        - "smartphone_ads_2024.json: Apple iPhone appears in 156 advertisements featuring product reveals, lifestyle integration, and camera quality demonstrations. Brand logo placement typically bottom-right corner with 'Think Different' messaging. Target demographics: 25-45 age group, premium market segment."
-        - "mobile_campaigns.json: Samsung Galaxy campaign analysis shows 134 commercials emphasizing innovation, display technology, and productivity features. Brand presence strongest in tech-focused advertisements with 'Do What You Can't' tagline appearing in 78% of spots."
-        - "brand_comparison.json: Smartphone advertising comparison: Apple emphasizes premium lifestyle and design aesthetics, Samsung focuses on technical specifications and innovation features, Google Pixel highlights AI photography capabilities. Campaign spending: Apple $2.3B, Samsung $1.8B, Google $890M in 2024."
+        - "tropicfeel.json: Scene from 00:00:48 - 00:00:50 shows smart packing cube being introduced, fitting perfectly into backpack's front pocket with text 'Packing Cube 12L, Pack more, pack smarter'. Scene from 00:01:14 - 00:01:15 features backpack with 'Superior Comfort' text highlighting thermoformed back panel design."
+        - "furo.json: Scene from 00:00:12 - 00:00:17 demonstrates man walking with Furo Systems bicycle in urban residential area with logo prominently displayed. Scene from 00:00:45 - 00:00:46 shows close-up of hydraulic disk brakes with 'TEKTRO HYDRAULIC DISK BRAKES' text overlay."
+        - "huawei.json: Scene from 00:00:07 - 00:00:10 displays person checking Huawei smartwatch for activity tracking while walking outdoors. Scene from 00:00:25 - 00:00:29 shows person at laundromat using smartwatch to start quick workout animation with fitness monitoring features."
 ---
 system:
 {% if override_prompt %}
@@ -42,6 +42,9 @@ Source citation requirements:
 - Always include source names for each fact using square brackets, for example [document1.pdf]
 - When combining information from multiple sources, list each source separately: [doc1.pdf][doc2.pdf]
 - If information comes from specific pages or sections, include that detail: [research_report.pdf#page=5]
+- For video content with scenes, ALWAYS include scene timestamps in your responses in the format "Scene from MM:SS - MM:SS" or "Scene from HH:MM:SS - HH:MM:SS"
+- When describing video scenes, provide temporal context like: "The scene from 00:15 - 00:30 shows..." or "From 01:23:45 - 01:25:12, the video demonstrates..."
+- Scene timestamp references should be integrated naturally into your response text, not just in citations
 
 If the sources don't contain enough information to answer the question, say you don't know. If asking a clarifying question about the specific brand, product, or advertising campaign would help, ask the question.
 {{ injected_prompt }}

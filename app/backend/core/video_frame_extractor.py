@@ -9,8 +9,21 @@ logger = logging.getLogger(__name__)
 class VideoFrameExtractor:
     """Utility class for extracting video frames using FFmpeg."""
     
-    def __init__(self, video_dir: str = "./data/content_understanding/videos", 
+    def __init__(self, video_dir: str = None, 
                  output_dir: str = "./static/video_thumbnails"):
+        # Auto-detect video directory - try local data first, then workspace data
+        if video_dir is None:
+            import os
+            from pathlib import Path
+            
+            local_video_dir = Path(__file__).resolve().parent.parent / "data" / "content_understanding" / "videos"
+            workspace_video_dir = Path(__file__).resolve().parent.parent.parent.parent / "data" / "content_understanding" / "videos"
+            
+            if local_video_dir.exists():
+                video_dir = str(local_video_dir)
+            else:
+                video_dir = str(workspace_video_dir)
+        
         self.video_dir = video_dir
         self.output_dir = output_dir
         self._ensure_output_dir()

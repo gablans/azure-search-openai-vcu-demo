@@ -134,7 +134,14 @@ async def assets(path):
 @bp.route("/content_understanding/videos/<path:filename>")
 async def video_content(filename):
     """Serve video files for the video player."""
-    video_path = Path(__file__).resolve().parent / ".." / ".." / "data" / "content_understanding" / "videos"
+    # Try local data directory first (for Docker deployment)
+    local_video_path = Path(__file__).resolve().parent / "data" / "content_understanding" / "videos"
+    if local_video_path.exists():
+        video_path = local_video_path
+    else:
+        # Fallback to workspace data directory (for local development)
+        video_path = Path(__file__).resolve().parent / ".." / ".." / "data" / "content_understanding" / "videos"
+    
     return await send_from_directory(video_path, filename)
 
 

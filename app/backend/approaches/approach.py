@@ -1,4 +1,4 @@
-import os
+import os, re
 from abc import ABC
 from collections.abc import AsyncGenerator, Awaitable
 from dataclasses import dataclass
@@ -36,6 +36,29 @@ from openai.types.chat import (
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
 
+def clean_image_references(content: str) -> str:
+    """
+    Remove or replace image file references to prevent prompty parser from trying to load non-existent files.
+    This prevents FileNotFoundError when content contains references like keyFrame.297.jpg
+    """
+    if not content:
+        return content
+    
+    # Multiple patterns to catch all image reference variations
+    patterns = [
+        # Pattern 1: keyFrame.12345.jpg -> [Frame: keyFrame.12345]
+        (r'keyFrame\.\d+\.(jpg|jpeg|png|gif|bmp)', r'[Frame: keyFrame.\1]'),
+        # Pattern 2: "Image": "filename.jpg" -> "Image": "[Frame reference]"  
+        (r'"Image":\s*"([^"]*\.(jpg|jpeg|png|gif|bmp))"', r'"Image": "[Frame reference]"'),
+        # Pattern 3: Any standalone image file reference -> [Frame reference]
+        (r'\b\w+\.(jpg|jpeg|png|gif|bmp)\b', r'[Frame reference]'),
+    ]
+    
+    cleaned_content = content
+    for pattern, replacement in patterns:
+        cleaned_content = re.sub(pattern, replacement, cleaned_content, flags=re.IGNORECASE)
+    
+    return cleaned_content
 
 @dataclass
 class Document:
@@ -101,6 +124,7 @@ class ExtraInfo:
     data_points: DataPoints
     thoughts: Optional[list[ThoughtStep]] = None
     followup_questions: Optional[list[Any]] = None
+    structured_response: Optional[dict[str, Any]] = None
 
 
 @dataclass
@@ -323,24 +347,27 @@ class Approach(ABC):
         return response, results
 
     def get_sources_content(
-        self, results: list[Document], use_semantic_captions: bool, use_image_citation: bool
-    ) -> list[str]:
+    self, results: list[Document], use_semantic_captions: bool, use_image_citation: bool
+) -> list[str]:
 
         def nonewlines(s: str) -> str:
             return s.replace("\n", " ").replace("\r", " ")
 
         if use_semantic_captions:
-            return [
+            sources = [
                 (self.get_citation((doc.sourcepage or ""), use_image_citation))
                 + ": "
                 + nonewlines(" . ".join([cast(str, c.text) for c in (doc.captions or [])]))
                 for doc in results
             ]
         else:
-            return [
+            sources = [
                 (self.get_citation((doc.sourcepage or ""), use_image_citation)) + ": " + nonewlines(doc.content or "")
                 for doc in results
             ]
+
+        # Clean image references to prevent FileNotFoundError in prompt parser
+        return [clean_image_references(source) for source in sources]
 
     def get_citation(self, sourcepage: str, use_image_citation: bool) -> str:
         if use_image_citation:

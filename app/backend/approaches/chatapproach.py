@@ -1,4 +1,5 @@
 import json
+import logging
 import re
 from abc import ABC, abstractmethod
 from collections.abc import AsyncGenerator, Awaitable
@@ -63,6 +64,23 @@ class ChatApproach(Approach, ABC):
         chat_completion_response: ChatCompletion = await cast(Awaitable[ChatCompletion], chat_coroutine)
         content = chat_completion_response.choices[0].message.content
         role = chat_completion_response.choices[0].message.role
+        
+        # Handle structured response parsing
+        use_structured_response = overrides.get("use_structured_response", False)
+        if use_structured_response:
+            try:
+                # Parse JSON response and add to context
+                structured_data = json.loads(content)
+                extra_info.structured_response = structured_data
+                # Use only the description as content to avoid showing raw JSON
+                content = structured_data.get("description", content)
+                logging.info(f"Successfully parsed structured response with {len(structured_data.get('scene_references', []))} scenes")
+            except json.JSONDecodeError as e:
+                # If JSON parsing fails, treat as regular response
+                logging.warning(f"Failed to parse JSON response: {e}")
+                logging.warning(f"Content length: {len(content)}, Preview: {content[:200]}...")
+                extra_info.structured_response = None
+        
         if overrides.get("suggest_followup_questions"):
             content, followup_questions = self.extract_followup_questions(content)
             extra_info.followup_questions = followup_questions

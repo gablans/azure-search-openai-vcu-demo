@@ -29,7 +29,7 @@ export function Component(): JSX.Element {
     const [minimumRerankerScore, setMinimumRerankerScore] = useState<number>(0);
     const [minimumSearchScore, setMinimumSearchScore] = useState<number>(0);
     const [retrievalMode, setRetrievalMode] = useState<RetrievalMode>(RetrievalMode.Hybrid);
-    const [retrieveCount, setRetrieveCount] = useState<number>(10);
+    const [retrieveCount, setRetrieveCount] = useState<number>(20);
     const [maxSubqueryCount, setMaxSubqueryCount] = useState<number>(10);
     const [resultsMergeStrategy, setResultsMergeStrategy] = useState<string>("interleaved");
     const [useSemanticRanker, setUseSemanticRanker] = useState<boolean>(true);
@@ -106,7 +106,7 @@ export function Component(): JSX.Element {
             setShowAgenticRetrievalOption(config.showAgenticRetrievalOption);
             setUseAgenticRetrieval(config.showAgenticRetrievalOption);
             if (config.showAgenticRetrievalOption) {
-                setRetrieveCount(10);
+                setRetrieveCount(20);
             }
         });
     };
@@ -278,10 +278,9 @@ export function Component(): JSX.Element {
     // Function to extract video filename from citation or context
     const getVideoFileFromAnswer = (answer: ChatAppResponse): string | undefined => {
         // Look for video references in data_points
-        if (answer.context?.data_points) {
+        if (answer.context?.data_points && Array.isArray(answer.context.data_points)) {
             for (const dataPoint of answer.context.data_points) {
-                // Check if the citation contains a .json file that corresponds to a video
-                if (dataPoint.includes(".json")) {
+                if (typeof dataPoint === "string" && dataPoint.includes(".json")) {
                     // Extract the base name (e.g., "huawei.json" -> "huawei.mp4")
                     const baseName = dataPoint.split(".json")[0].split("/").pop();
                     if (baseName) {

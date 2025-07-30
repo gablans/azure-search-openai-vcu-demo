@@ -49,6 +49,7 @@ export interface SettingsProps {
     showSuggestFollowupQuestions?: boolean;
     showAgenticRetrievalOption: boolean;
     useAgenticRetrieval: boolean;
+    useStructuredResponse?: boolean;
 }
 
 export const Settings = ({
@@ -89,7 +90,8 @@ export const Settings = ({
     promptTemplateSuffix,
     showSuggestFollowupQuestions,
     showAgenticRetrievalOption,
-    useAgenticRetrieval
+    useAgenticRetrieval,
+    useStructuredResponse
 }: SettingsProps) => {
     const { t } = useTranslation();
 
@@ -102,6 +104,8 @@ export const Settings = ({
     const seedFieldId = useId("seedField");
     const agenticRetrievalId = useId("agenticRetrieval");
     const agenticRetrievalFieldId = useId("agenticRetrievalField");
+    const structuredResponseId = useId("structuredResponse");
+    const structuredResponseFieldId = useId("structuredResponseField");
     const searchScoreId = useId("searchScore");
     const searchScoreFieldId = useId("searchScoreField");
     const rerankerScoreId = useId("rerankerScore");
@@ -182,6 +186,17 @@ export const Settings = ({
                     onChange={(_ev, checked) => onChange("useAgenticRetrieval", !!checked)}
                     aria-labelledby={agenticRetrievalId}
                     onRenderLabel={props => renderLabel(props, agenticRetrievalId, agenticRetrievalFieldId, t("helpTexts.suggestFollowupQuestions"))}
+                />
+            )}
+            {useStructuredResponse !== undefined && (
+                <Checkbox
+                    id={structuredResponseFieldId}
+                    className={styles.settingsSeparator}
+                    checked={useStructuredResponse}
+                    label={t("labels.useStructuredResponse")}
+                    onChange={(_ev, checked) => onChange("useStructuredResponse", !!checked)}
+                    aria-labelledby={structuredResponseId}
+                    onRenderLabel={props => renderLabel(props, structuredResponseId, structuredResponseFieldId, t("helpTexts.useStructuredResponse"))}
                 />
             )}
             {!useAgenticRetrieval && !useGPT4V && (

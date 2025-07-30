@@ -1,5 +1,6 @@
 from collections.abc import Awaitable
 from typing import Any, Optional, Union, cast
+import logging
 
 from azure.search.documents.agent.aio import KnowledgeAgentRetrievalClient
 from azure.search.documents.aio import SearchClient
@@ -12,7 +13,7 @@ from openai.types.chat import (
     ChatCompletionToolParam,
 )
 
-from approaches.approach import DataPoints, ExtraInfo, ThoughtStep
+from approaches.approach import DataPoints, ExtraInfo, ThoughtStep, clean_image_references
 from approaches.chatapproach import ChatApproach
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
@@ -69,6 +70,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
         self.query_rewrite_prompt = self.prompt_manager.load_prompt("chat_query_rewrite.prompty")
         self.query_rewrite_tools = self.prompt_manager.load_tools("chat_query_rewrite_tools.json")
         self.answer_prompt = self.prompt_manager.load_prompt("chat_answer_question.prompty")
+        self.structured_answer_prompt = self.prompt_manager.load_prompt("chat_answer_question_structured.prompty")
         self.reasoning_effort = reasoning_effort
         self.include_token_usage = True
 
@@ -92,14 +94,37 @@ class ChatReadRetrieveReadApproach(ChatApproach):
         else:
             extra_info = await self.run_search_approach(messages, overrides, auth_claims)
 
+        # Choose prompt based on whether structured response is requested
+        use_structured_response = overrides.get("use_structured_response", False)
+        chosen_prompt = self.structured_answer_prompt if use_structured_response else self.answer_prompt
+
+        # Force non-streaming for structured responses to ensure proper JSON parsing
+        if use_structured_response and should_stream:
+            should_stream = False
+            logging.info("Disabled streaming for structured response to ensure proper JSON parsing")
+
+        # Clean all text sources to remove image references that would cause FileNotFoundError
+        cleaned_text_sources = [clean_image_references(source) for source in extra_info.data_points.text]
+        cleaned_user_query = clean_image_references(str(original_user_query))
+
+        # Clean past messages content to remove any image references
+        cleaned_past_messages = []
+        for msg in messages[:-1]:
+            if isinstance(msg.get('content'), str):
+                cleaned_msg = dict(msg)
+                cleaned_msg['content'] = clean_image_references(msg['content'])
+                cleaned_past_messages.append(cleaned_msg)
+            else:
+                cleaned_past_messages.append(msg)
+
         messages = self.prompt_manager.render_prompt(
-            self.answer_prompt,
+            chosen_prompt,
             self.get_system_prompt_variables(overrides.get("prompt_template"))
             | {
                 "include_follow_up_questions": bool(overrides.get("suggest_followup_questions")),
-                "past_messages": messages[:-1],
-                "user_query": original_user_query,
-                "text_sources": extra_info.data_points.text,
+                "past_messages": cleaned_past_messages,
+                "user_query": cleaned_user_query,
+                "text_sources": cleaned_text_sources,
             },
         )
 
@@ -168,6 +193,10 @@ class ChatReadRetrieveReadApproach(ChatApproach):
 
         query_text = self.get_search_query(chat_completion, original_user_query)
 
+        # Log query rewrite for debugging
+        logging.info(f"Query rewrite - Original: {original_user_query}")
+        logging.info(f"Query rewrite - Optimized: {query_text}")
+
         # STEP 2: Retrieve relevant documents from the search index with the GPT optimized query
 
         # If retrieval mode includes vectors, compute an embedding for the query
@@ -188,6 +217,11 @@ class ChatReadRetrieveReadApproach(ChatApproach):
             minimum_reranker_score,
             use_query_rewriting,
         )
+
+        # Log search results for debugging
+        logging.info(f"Search completed - Found {len(results)} results for query: {query_text}")
+        if len(results) == 0:
+            logging.warning(f"No search results found for query: {query_text}")
 
         # STEP 3: Generate a contextual and content specific answer using the search results and chat history
         text_sources = self.get_sources_content(results, use_semantic_captions, use_image_citation=False)

@@ -4,11 +4,11 @@ description: Search for specific brands, products, scenes, and advertising conte
 model:
     api: chat
 sample:
-    user_query: Find advertisements featuring automotive brands and car models
+    user_query: Find video scenes featuring bicycle brands and their key features
     text_sources:
-        - "ad_analysis_2024.json: Advertisement ID 'auto_commercial_001' features BMW X5 model prominently displayed in urban setting. Brand logo appears in bottom-right corner at timestamp 0:15-0:30. Vehicle shown in metallic silver color with panoramic sunroof visible. Scene includes downtown cityscape background with modern architecture."
-        - "brand_inventory.json: Automotive advertisements dataset contains 150 BMW commercials, 89 Mercedes-Benz spots, and 67 Audi campaigns. BMW X5 appears in 23 different advertisements across Q2-Q4 2024. Common themes include luxury lifestyle, urban driving, and family scenarios."
-        - "moment_detection.json: BMW brand logo detected in advertisements at following timestamps: auto_commercial_001 (0:15-0:30), luxury_lifestyle_045 (0:05-0:12), family_drive_089 (0:22-0:35). Logo placement varies between bottom-right corner, center overlay, and vehicle grille close-ups."
+        - "furo.json: Scene from 00:00:12 - 00:00:17 shows a man walking with a Furo Systems bicycle in an urban residential area, with the Furo Systems logo displayed prominently. Scene from 00:00:45 - 00:00:46 features close-up of bicycle's hydraulic disk brakes with text 'TEKTRO HYDRAULIC DISK BRAKES'."
+        - "huawei.json: Scene from 00:00:07 - 00:00:10 displays a person checking their Huawei smartwatch for activity tracking data while walking outside. Scene from 00:00:41 - 00:00:44 shows person exercising at home with dog while smartwatch displays heart rate, duration, and calories burned."
+        - "tropicfeel.json: Scene from 00:00:03 - 00:00:04 demonstrates Hive backpack being packed with clothes and camera equipment, emphasizing storage capabilities. Scene from 00:02:23 - 00:02:27 shows woman demonstrating laptop compartment feature while sitting on bench."
 ---
 system:
 {% if override_prompt %}
@@ -24,21 +24,25 @@ Search and analysis approach:
 - Describe advertising contexts, target demographics, and campaign themes when available
 - Provide comprehensive answers that combine information from multiple JSON documents and data sources
 
-Always cite your sources using square brackets [document.json] and include specific identifiers when available [campaign_data.json#ad_id=auto_001].
+Citation and timestamp requirements:
+- Always cite your sources using square brackets [document.json] and include specific identifiers when available [campaign_data.json#ad_id=auto_001]
+- When referencing video scenes, ALWAYS include the scene timestamps in the format "Scene from MM:SS - MM:SS" or "Scene from HH:MM:SS - HH:MM:SS"
+- For video content, provide scene references like: "Scene from 00:15 - 00:30 shows..." or "The scene from 01:23:45 - 01:25:12 demonstrates..."
+- Include scene timestamps as part of your natural response, not just in citations
+
 If you cannot find the requested brands, products, or advertising content in the sources, say you don't know.
 {{ injected_prompt }}
 {% endif %}
 
 user:
-Find Nike brand appearances in sports advertisements
+Find video scenes featuring bicycle brands and their key features
 
 Sources:
-sports_ads_q3.json: Nike swoosh logo detected in advertisement 'basketball_pro_032' at timestamps 0:08-0:15 and 0:45-0:52. Athletes wearing Nike Air Jordan sneakers throughout 60-second commercial. Brand tagline "Just Do It" appears at 0:50 with logo overlay.
-brand_tracking.json: Nike brand mentions across sports advertising dataset: 45 basketball ads, 23 running commercials, 18 soccer/football spots. Nike Air Jordan product line featured in 89% of basketball advertisements. Primary demographics target 18-34 age group.
-campaign_analysis.json: Nike sports campaign themes include performance enhancement, athlete endorsements, and inspirational messaging. Michael Jordan appears in 12 advertisements, LeBron James in 8 commercials. Brand presence strongest during Q3 sports season.
+furo.json: Scene from 00:00:12 - 00:00:17 shows a man walking with a Furo Systems bicycle in an urban residential area, with the Furo Systems logo displayed prominently. Scene from 00:00:45 - 00:00:46 features close-up of bicycle's hydraulic disk brakes with text 'TEKTRO HYDRAULIC DISK BRAKES'. Scene from 00:00:51 - 00:00:52 demonstrates man parking bicycle with text '504WH REMOVABLE BATTERY'.
+huawei.json: Scene from 00:00:07 - 00:00:10 displays a person checking their Huawei smartwatch for activity tracking data while walking outside. Scene from 00:00:41 - 00:00:44 shows person exercising at home with dog while smartwatch displays heart rate monitoring features.
 
 A:
-The sports advertisement data shows extensive Nike brand presence across multiple categories. In basketball advertisements specifically, the Nike swoosh logo appears in 'basketball_pro_032' at timestamps 0:08-0:15 and 0:45-0:52, with athletes wearing Nike Air Jordan sneakers throughout the commercial and the "Just Do It" tagline appearing at 0:50 [sports_ads_q3.json]. Nike has a strong presence across the sports advertising dataset with 45 basketball ads, 23 running commercials, and 18 soccer/football spots, with the Air Jordan product line featured in 89% of basketball advertisements targeting the 18-34 demographic [brand_tracking.json]. The campaign analysis reveals Nike's strategy focuses on performance enhancement and athlete endorsements, with Michael Jordan appearing in 12 advertisements and LeBron James in 8 commercials, with strongest brand presence during Q3 sports season [campaign_analysis.json].
+The video content shows multiple bicycle brand features across different scenes. The Furo Systems bicycle is prominently featured in several key moments: the scene from 00:00:12 - 00:00:17 shows a man walking with the bicycle in an urban setting with the Furo Systems logo clearly visible [furo.json]. Technical features are highlighted in the scene from 00:00:45 - 00:00:46, which provides a close-up of the hydraulic disk brakes with "TEKTRO HYDRAULIC DISK BRAKES" text overlay [furo.json]. The battery feature is demonstrated in the scene from 00:00:51 - 00:00:52, showing the man parking the bicycle while displaying "504WH REMOVABLE BATTERY" text [furo.json]. While the Huawei content focuses on smartwatch features rather than bicycles, it shows activity tracking capabilities in scenes from 00:00:07 - 00:00:10 and 00:00:41 - 00:00:44 [huawei.json].
 
 user:
 {{ user_query }}

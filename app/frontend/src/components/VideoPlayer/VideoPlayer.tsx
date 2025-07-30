@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useImperativeHandle, forwardRef } from "react";
 import { Stack, Text } from "@fluentui/react";
 import styles from "./VideoPlayer.module.css";
 
@@ -9,10 +9,15 @@ interface Props {
     height?: string;
 }
 
-export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "100%", height = "400px" }: Props) => {
+export interface VideoPlayerRef {
+    seekToTimestamp: (timestamp: string) => void;
+}
+
+export const VideoPlayer = forwardRef<VideoPlayerRef, Props>(({ videoFileName, timestamp = "00:00:00", width = "100%", height = "400px" }, ref) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [videoSrc, setVideoSrc] = useState<string>("");
     const [error, setError] = useState<string>("");
+    const [currentTimestamp, setCurrentTimestamp] = useState<string>(timestamp);
 
     // Convert timestamp from "HH:MM:SS.mmm" to seconds
     const timestampToSeconds = (timestamp: string): number => {
@@ -31,6 +36,18 @@ export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "10
         }
     };
 
+    // Expose methods to parent component
+    useImperativeHandle(ref, () => ({
+        seekToTimestamp: (newTimestamp: string) => {
+            setCurrentTimestamp(newTimestamp);
+            if (videoRef.current && videoSrc) {
+                const seekTime = timestampToSeconds(newTimestamp);
+                videoRef.current.currentTime = seekTime;
+                videoRef.current.play().catch(err => console.log("Video play failed:", err));
+            }
+        }
+    }));
+
     useEffect(() => {
         // Construct the video URL
         const videoUrl = `/content_understanding/videos/${videoFileName}`;
@@ -42,8 +59,8 @@ export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "10
             const video = videoRef.current;
 
             const handleLoadedData = () => {
-                if (timestamp && timestamp !== "00:00:00") {
-                    const seekTime = timestampToSeconds(timestamp);
+                if (currentTimestamp && currentTimestamp !== "00:00:00") {
+                    const seekTime = timestampToSeconds(currentTimestamp);
                     video.currentTime = seekTime;
                 }
             };
@@ -60,7 +77,7 @@ export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "10
                 video.removeEventListener("error", handleError);
             };
         }
-    }, [videoSrc, timestamp]);
+    }, [videoSrc, currentTimestamp]);
 
     if (error) {
         return (
@@ -78,7 +95,7 @@ export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "10
             <Stack.Item>
                 <Text variant="medium" className={styles.videoTitle}>
                     Video: {videoFileName}
-                    {timestamp && timestamp !== "00:00:00" && <span className={styles.timestampInfo}> - Seeking to {timestamp}</span>}
+                    {currentTimestamp && currentTimestamp !== "00:00:00" && <span className={styles.timestampInfo}> - Seeking to {currentTimestamp}</span>}
                 </Text>
             </Stack.Item>
             <Stack.Item>
@@ -88,4 +105,4 @@ export const VideoPlayer = ({ videoFileName, timestamp = "00:00:00", width = "10
             </Stack.Item>
         </Stack>
     );
-};
+});

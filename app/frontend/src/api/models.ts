@@ -16,6 +16,22 @@ export const enum VectorFields {
     TextAndImageEmbeddings = "textAndImageEmbeddings"
 }
 
+// Structured video response types
+export type VideoSceneReference = {
+    start_timestamp: string;
+    end_timestamp: string;
+    description: string;
+    video_file: string;
+};
+
+export type StructuredVideoResponse = {
+    description: string;
+    scene_references: VideoSceneReference[];
+    key_features: string[];
+    brands_mentioned: string[];
+    source_files: string[];
+};
+
 export type ChatAppRequestOverrides = {
     retrieval_mode?: RetrievalMode;
     semantic_ranker?: boolean;
@@ -42,6 +58,7 @@ export type ChatAppRequestOverrides = {
     vector_fields: VectorFields;
     language: string;
     use_agentic_retrieval: boolean;
+    use_structured_response?: boolean; // New flag for structured responses
 };
 
 export type ResponseMessage = {
@@ -59,6 +76,7 @@ export type ResponseContext = {
     data_points: string[];
     followup_questions: string[] | null;
     thoughts: Thoughts[];
+    structured_response?: StructuredVideoResponse; // New optional structured response
 };
 
 export type ChatAppResponseOrError = {

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { Stack, IconButton } from "@fluentui/react";
+import { Video24Regular } from "@fluentui/react-icons";
 import { useTranslation } from "react-i18next";
 import DOMPurify from "dompurify";
 import ReactMarkdown from "react-markdown";
@@ -9,6 +10,7 @@ import rehypeRaw from "rehype-raw";
 import styles from "./Answer.module.css";
 import { ChatAppResponse, getCitationFilePath, SpeechConfig } from "../../api";
 import { parseAnswerToHtml } from "./AnswerParser";
+import { StructuredAnswerParser } from "./StructuredAnswerParser";
 import { AnswerIcon } from "./AnswerIcon";
 import { SpeechOutputBrowser } from "./SpeechOutputBrowser";
 import { SpeechOutputAzure } from "./SpeechOutputAzure";
@@ -23,6 +25,7 @@ interface Props {
     onThoughtProcessClicked: () => void;
     onSupportingContentClicked: () => void;
     onVideoPlayerClicked?: () => void;
+    onVideoTimestampClicked?: (videoFile: string, timestamp: string) => void;
     onFollowupQuestionClicked?: (question: string) => void;
     showFollowupQuestions?: boolean;
     showSpeechOutputBrowser?: boolean;
@@ -39,6 +42,7 @@ export const Answer = ({
     onThoughtProcessClicked,
     onSupportingContentClicked,
     onVideoPlayerClicked,
+    onVideoTimestampClicked,
     onFollowupQuestionClicked,
     showFollowupQuestions,
     showSpeechOutputAzure,
@@ -49,6 +53,9 @@ export const Answer = ({
     const { t } = useTranslation();
     const sanitizedAnswerHtml = DOMPurify.sanitize(parsedAnswer.answerHtml);
     const [copied, setCopied] = useState(false);
+
+    // Check if we have a structured response
+    const hasStructuredResponse = answer.context?.structured_response;
 
     const handleCopy = () => {
         // Single replace to remove all HTML tags to remove the citations
@@ -61,6 +68,12 @@ export const Answer = ({
                 setTimeout(() => setCopied(false), 2000);
             })
             .catch(err => console.error("Failed to copy text: ", err));
+    };
+
+    const handleVideoTimestampClick = (videoFile: string, timestamp: string) => {
+        if (onVideoTimestampClicked) {
+            onVideoTimestampClicked(videoFile, timestamp);
+        }
     };
 
     return (
@@ -111,9 +124,16 @@ export const Answer = ({
             </Stack.Item>
 
             <Stack.Item grow>
-                <div className={styles.answerText}>
-                    <ReactMarkdown children={sanitizedAnswerHtml} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} />
-                </div>
+                {hasStructuredResponse ? (
+                    <StructuredAnswerParser
+                        structuredResponse={answer.context.structured_response!}
+                        onTimestampClick={handleVideoTimestampClick}
+                    />
+                ) : (
+                    <div className={styles.answerText}>
+                        <ReactMarkdown children={sanitizedAnswerHtml} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} />
+                    </div>
+                )}
             </Stack.Item>
 
             {!!parsedAnswer.citations.length && (
