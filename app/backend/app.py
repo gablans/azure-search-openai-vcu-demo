@@ -50,7 +50,7 @@ from quart import (
 )
 from quart_cors import cors
 
-from approaches.approach import Approach
+from approaches.approach import Approach, is_video_query
 from approaches.chatreadretrieveread import ChatReadRetrieveReadApproach
 from approaches.chatreadretrievereadvision import ChatReadRetrieveReadVisionApproach
 from approaches.promptmanager import PromptyManager
@@ -282,6 +282,13 @@ async def chat(auth_claims: dict[str, Any]):
     context["auth_claims"] = auth_claims
     try:
         use_gpt4v = context.get("overrides", {}).get("use_gpt4v", False)
+        
+        # Check if this is video content and force regular approach for better video handling
+        user_query = request_json.get("messages", [{}])[-1].get("content", "")
+        if use_gpt4v and is_video_query(user_query):
+            use_gpt4v = False
+            logging.info("Disabled GPT4V for video content query to use optimized video approach")
+        
         approach: Approach
         if use_gpt4v and CONFIG_CHAT_VISION_APPROACH in current_app.config:
             approach = cast(Approach, current_app.config[CONFIG_CHAT_VISION_APPROACH])
@@ -330,15 +337,44 @@ async def chat_stream(auth_claims: dict[str, Any]):
                 current_app.config[CONFIG_CHAT_HISTORY_COSMOS_ENABLED],
                 current_app.config[CONFIG_CHAT_HISTORY_BROWSER_ENABLED],
             )
-        result = await approach.run_stream(
-            request_json["messages"],
-            context=context,
-            session_state=session_state,
-        )
-        response = await make_response(format_as_ndjson(result))
-        response.timeout = None  # type: ignore
-        response.mimetype = "application/json-lines"
-        return response
+        
+        # Check if structured response is enabled (auto-detected or explicit)
+        use_structured_response = context.get("overrides", {}).get("use_structured_response", False)
+        
+        # Auto-detect video content early to determine response format
+        if not use_structured_response:
+            from approaches.approach import is_video_query
+            last_message = request_json["messages"][-1]
+            if isinstance(last_message.get("content"), str):
+                if is_video_query(last_message["content"]):
+                    use_structured_response = True
+                    # Update context to pass this information to the approach
+                    if "overrides" not in context:
+                        context["overrides"] = {}
+                    context["overrides"]["use_structured_response"] = True
+                    logging.info(f"Auto-detected video query in main handler, enabling structured response: {last_message['content'][:100]}...")
+        
+        logging.info(f"Using structured response: {use_structured_response}")
+        
+        if use_structured_response:
+            # Use non-streaming for structured responses
+            result = await approach.run(
+                request_json["messages"],
+                context=context,
+                session_state=session_state,
+            )
+            return jsonify(result)
+        else:
+            # Use streaming for regular responses
+            result = await approach.run_stream(
+                request_json["messages"],
+                context=context,
+                session_state=session_state,
+            )
+            response = await make_response(format_as_ndjson(result))
+            response.timeout = None  # type: ignore
+            response.mimetype = "application/json-lines"
+            return response
     except Exception as error:
         return error_response(error, "/chat")
 

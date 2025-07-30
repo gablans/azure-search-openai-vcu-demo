@@ -45,20 +45,104 @@ def clean_image_references(content: str) -> str:
         return content
     
     # Multiple patterns to catch all image reference variations
+    # Use simple text replacements that won't confuse prompty parser
     patterns = [
-        # Pattern 1: keyFrame.12345.jpg -> [Frame: keyFrame.12345]
-        (r'keyFrame\.\d+\.(jpg|jpeg|png|gif|bmp)', r'[Frame: keyFrame.\1]'),
-        # Pattern 2: "Image": "filename.jpg" -> "Image": "[Frame reference]"  
-        (r'"Image":\s*"([^"]*\.(jpg|jpeg|png|gif|bmp))"', r'"Image": "[Frame reference]"'),
-        # Pattern 3: Any standalone image file reference -> [Frame reference]
-        (r'\b\w+\.(jpg|jpeg|png|gif|bmp)\b', r'[Frame reference]'),
+        # Pattern 1: keyFrame.12345.jpg -> "frame reference"
+        (r'keyFrame\.\d+\.(jpg|jpeg|png|gif|bmp)', r'frame reference'),
+        # Pattern 2: "Image": "filename.jpg" -> "Image": "frame reference"  
+        (r'"Image":\s*"([^"]*\.(jpg|jpeg|png|gif|bmp))"', r'"Image": "frame reference"'),
+        # Pattern 3: Markdown image syntax ![alt](image.jpg) -> "frame reference"
+        (r'!\[[^\]]*\]\([^)]*\.(jpg|jpeg|png|gif|bmp)\)', r'frame reference'),
+        # Pattern 4: Any standalone image file reference -> "frame reference"
+        (r'\b\w+\.(jpg|jpeg|png|gif|bmp)\b', r'frame reference'),
+        # Pattern 5: Truncated paths like '/app/approaches/prompts/[Frame' -> "frame reference"
+        (r'/[^/\s]*[Ff]rame[^/\s]*', r'frame reference'),
+        # Pattern 6: Any file path containing image extensions
+        (r'/[^\s]*\.(jpg|jpeg|png|gif|bmp|JPG|JPEG|PNG|GIF|BMP)', r'frame reference'),
+        # Pattern 7: ANY bracket pattern that contains "frame" - remove entirely
+        (r'\[[^\]]*[Ff]rame[^\]]*\]?', r'frame reference'),
+        # Pattern 8: Catch isolated bracket-frame patterns that might confuse parser
+        (r'\[[Ff]rame[^\]]*', r'frame reference'),
+        # Pattern 9: Remove any remaining bracket patterns that could be image refs
+        (r'!\[[^\]]*\]', r'frame reference'),
+        # Pattern 10: Catch any remaining [text patterns without closing brackets
+        (r'\[[A-Za-z][^,\]]*$', r'frame reference'),
     ]
     
     cleaned_content = content
     for pattern, replacement in patterns:
         cleaned_content = re.sub(pattern, replacement, cleaned_content, flags=re.IGNORECASE)
     
+    # Additional safety: remove any remaining standalone brackets that could be interpreted as markdown
+    cleaned_content = re.sub(r'\[(?![^\]]*\])', r'(', cleaned_content)  # Convert orphaned [ to (
+    
     return cleaned_content
+
+
+def is_video_content(search_results=None, text_sources=None) -> bool:
+    """
+    Detect if the content contains video-related information based on various indicators.
+    """
+    if not text_sources:
+        return False
+    
+    # Check for video-related indicators in text sources
+    video_indicators = [
+        r'\b\d{2}:\d{2}:\d{2}(?:\.\d{3})?\b',  # Timestamp patterns like "00:02:15.500"
+        r'\bscene\s+from\s+\d{2}:\d{2}:\d{2}\b',  # "Scene from 00:02:15"
+        r'\.mp4\b',  # Video file extensions
+        r'\bvideo\s+file\b',  # "video file" references
+        r'\btimestamp\b',  # Timestamp mentions
+        r'\bcommercial\b',  # Commercial/advertisement content
+        r'\badvertisement\b',  # Advertisement content
+        r'\bfuro\.json\b',  # Specific video JSON files
+        r'\bhuawei\.json\b',
+        r'\btropicfeel\.json\b',
+        r'\bkeyFrame\.\d+\b',  # Video frame references
+        r'\bframe\s+reference\b',  # Frame reference text (our cleaned version)
+        r'\bscenes?\b',  # Scene mentions
+        r'\bstoryboard\b',  # Storyboard references
+    ]
+    
+    text_content = " ".join(text_sources).lower()
+    
+    for pattern in video_indicators:
+        if re.search(pattern, text_content, re.IGNORECASE):
+            return True
+    
+    return False
+
+
+def is_video_query(user_query: str) -> bool:
+    """
+    Detect if a user query is asking about video content.
+    """
+    if not user_query:
+        return False
+    
+    video_query_indicators = [
+        r'\bcommercial\b',
+        r'\badvertisement\b', 
+        r'\bvideo\b',
+        r'\bscene\b',
+        r'\btimestamp\b',
+        r'\bfuro\b',
+        r'\bhuawei\b',
+        r'\btropicfeel\b',
+        r'\bbrand.*advertisement\b',
+        r'\bproduct.*advertisement\b',
+        r'\bsentiment.*commercial\b',
+        r'\bad\s+where\b',  # "ad where" pattern
+        r'\bin\s+the\s+\w+\s+commercial\b',  # "in the X commercial"
+    ]
+    
+    query_lower = user_query.lower()
+    
+    for pattern in video_query_indicators:
+        if re.search(pattern, query_lower, re.IGNORECASE):
+            return True
+    
+    return False
 
 @dataclass
 class Document:

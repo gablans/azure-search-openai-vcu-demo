@@ -1,3 +1,4 @@
+import logging
 from collections.abc import Awaitable
 from typing import Any, Callable, Optional, Union, cast
 
@@ -11,7 +12,7 @@ from openai.types.chat import (
     ChatCompletionToolParam,
 )
 
-from approaches.approach import DataPoints, ExtraInfo, ThoughtStep
+from approaches.approach import DataPoints, ExtraInfo, ThoughtStep, clean_image_references, is_video_content
 from approaches.chatapproach import ChatApproach
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
@@ -70,6 +71,7 @@ class ChatReadRetrieveReadVisionApproach(ChatApproach):
         self.query_rewrite_prompt = self.prompt_manager.load_prompt("chat_query_rewrite.prompty")
         self.query_rewrite_tools = self.prompt_manager.load_tools("chat_query_rewrite_tools.json")
         self.answer_prompt = self.prompt_manager.load_prompt("chat_answer_question_vision.prompty")
+        self.structured_answer_prompt = self.prompt_manager.load_prompt("chat_answer_question_vision_structured.prompty")
         # Currently disabled due to issues with rendering token usage in the UI
         self.include_token_usage = False
 
@@ -146,21 +148,61 @@ class ChatReadRetrieveReadVisionApproach(ChatApproach):
         # STEP 3: Generate a contextual and content specific answer using the search results and chat history
         text_sources = []
         image_sources = []
+        
+        # Get text sources first to check for video content
         if send_text_to_gptvision:
-            text_sources = self.get_sources_content(results, use_semantic_captions, use_image_citation=True)
+            raw_text_sources = self.get_sources_content(results, use_semantic_captions, use_image_citation=True)
+            # Clean image references from text sources to prevent FileNotFoundError
+            text_sources = [clean_image_references(source) for source in raw_text_sources]
+
+        # Auto-detect video content and disable image processing if video content detected
+        is_video_detected = is_video_content(results, text_sources)
+        if is_video_detected:
+            # For video content, disable image processing to avoid FileNotFoundError
+            send_images_to_gptvision = False
+            logging.info("Detected video content, disabled image processing to prevent errors")
+            
         if send_images_to_gptvision:
             for result in results:
                 url = await fetch_image(self.blob_container_client, result)
                 if url:
                     image_sources.append(url)
 
+        # Clean user query and past messages to remove image references that would cause FileNotFoundError
+        cleaned_user_query = clean_image_references(str(original_user_query))
+        
+        # Clean past messages content to remove any image references
+        cleaned_past_messages = []
+        for msg in messages[:-1]:
+            if isinstance(msg.get('content'), str):
+                cleaned_msg = dict(msg)
+                cleaned_msg['content'] = clean_image_references(msg['content'])
+                cleaned_past_messages.append(cleaned_msg)
+            else:
+                cleaned_past_messages.append(msg)
+
+        # Choose prompt based on whether structured response is requested
+        use_structured_response = overrides.get("use_structured_response", False)
+        
+        # Auto-enable structured response for video content
+        if not use_structured_response and is_video_detected:
+            use_structured_response = True
+            logging.info("Auto-enabled structured response for video content")
+            
+        chosen_prompt = self.structured_answer_prompt if use_structured_response else self.answer_prompt
+
+        # Force non-streaming for structured responses to ensure proper JSON parsing
+        if use_structured_response and should_stream:
+            should_stream = False
+            logging.info("Disabled streaming for structured response to ensure proper JSON parsing")
+
         messages = self.prompt_manager.render_prompt(
-            self.answer_prompt,
+            chosen_prompt,
             self.get_system_prompt_variables(overrides.get("prompt_template"))
             | {
                 "include_follow_up_questions": bool(overrides.get("suggest_followup_questions")),
-                "past_messages": messages[:-1],
-                "user_query": original_user_query,
+                "past_messages": cleaned_past_messages,
+                "user_query": cleaned_user_query,
                 "text_sources": text_sources,
                 "image_sources": image_sources,
             },

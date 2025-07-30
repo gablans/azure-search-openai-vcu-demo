@@ -1,3 +1,4 @@
+import logging
 from collections.abc import Awaitable
 from typing import Any, Callable, Optional
 
@@ -8,7 +9,7 @@ from openai.types.chat import (
     ChatCompletionMessageParam,
 )
 
-from approaches.approach import Approach, DataPoints, ExtraInfo, ThoughtStep
+from approaches.approach import Approach, DataPoints, ExtraInfo, ThoughtStep, clean_image_references, is_video_content
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
 from core.imageshelper import fetch_image
@@ -115,18 +116,33 @@ class RetrieveThenReadVisionApproach(Approach):
         # Process results
         text_sources = []
         image_sources = []
+        
+        # Get text sources first to check for video content
         if send_text_to_gptvision:
-            text_sources = self.get_sources_content(results, use_semantic_captions, use_image_citation=True)
+            raw_text_sources = self.get_sources_content(results, use_semantic_captions, use_image_citation=True)
+            # Clean image references from text sources to prevent FileNotFoundError
+            text_sources = [clean_image_references(source) for source in raw_text_sources]
+
+        # Auto-detect video content and disable image processing if video content detected
+        is_video_detected = is_video_content(results, text_sources)
+        if is_video_detected:
+            # For video content, disable image processing to avoid FileNotFoundError
+            send_images_to_gptvision = False
+            logging.info("Detected video content, disabled image processing to prevent errors")
+            
         if send_images_to_gptvision:
             for result in results:
                 url = await fetch_image(self.blob_container_client, result)
                 if url:
                     image_sources.append(url)
 
+        # Clean user query to remove image references that would cause FileNotFoundError  
+        cleaned_user_query = clean_image_references(str(q))
+
         messages = self.prompt_manager.render_prompt(
             self.answer_prompt,
             self.get_system_prompt_variables(overrides.get("prompt_template"))
-            | {"user_query": q, "text_sources": text_sources, "image_sources": image_sources},
+            | {"user_query": cleaned_user_query, "text_sources": text_sources, "image_sources": image_sources},
         )
 
         chat_completion = await self.openai_client.chat.completions.create(

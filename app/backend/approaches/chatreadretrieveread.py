@@ -13,7 +13,7 @@ from openai.types.chat import (
     ChatCompletionToolParam,
 )
 
-from approaches.approach import DataPoints, ExtraInfo, ThoughtStep, clean_image_references
+from approaches.approach import Approach, DataPoints, ExtraInfo, ThoughtStep, clean_image_references, is_video_content, is_video_query
 from approaches.chatapproach import ChatApproach
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
@@ -89,13 +89,28 @@ class ChatReadRetrieveReadApproach(ChatApproach):
             raise Exception(
                 f"{self.chatgpt_model} does not support streaming. Please use a different model or disable streaming."
             )
+        
+        # Early detection of video queries to enable proper handling
+        is_video_query_detected = is_video_query(str(original_user_query))
+        if is_video_query_detected:
+            logging.info(f"Detected video query: {original_user_query}")
+        
         if use_agentic_retrieval:
             extra_info = await self.run_agentic_retrieval_approach(messages, overrides, auth_claims)
         else:
             extra_info = await self.run_search_approach(messages, overrides, auth_claims)
 
-        # Choose prompt based on whether structured response is requested
+        # Auto-detect video content and enable structured responses for better formatting
         use_structured_response = overrides.get("use_structured_response", False)
+        
+        # Check both query and content for video indicators
+        is_video_content_detected = is_video_content(search_results=None, text_sources=extra_info.data_points.text)
+        
+        if not use_structured_response and (is_video_query_detected or is_video_content_detected):
+            use_structured_response = True
+            logging.info(f"Auto-enabled structured response for video content. Query detected: {is_video_query_detected}, Content detected: {is_video_content_detected}")
+
+        # Choose prompt based on whether structured response is requested
         chosen_prompt = self.structured_answer_prompt if use_structured_response else self.answer_prompt
 
         # Force non-streaming for structured responses to ensure proper JSON parsing
@@ -104,7 +119,14 @@ class ChatReadRetrieveReadApproach(ChatApproach):
             logging.info("Disabled streaming for structured response to ensure proper JSON parsing")
 
         # Clean all text sources to remove image references that would cause FileNotFoundError
-        cleaned_text_sources = [clean_image_references(source) for source in extra_info.data_points.text]
+        cleaned_text_sources = []
+        if extra_info.data_points.text:
+            for source in extra_info.data_points.text:
+                cleaned_source = clean_image_references(source)
+                cleaned_text_sources.append(cleaned_source)
+                if cleaned_source != source:
+                    logging.debug(f"Cleaned image references from source content")
+        
         cleaned_user_query = clean_image_references(str(original_user_query))
 
         # Clean past messages content to remove any image references
