@@ -19,6 +19,160 @@ from approaches.approach import (
 
 
 class ChatApproach(Approach, ABC):
+    """
+    Base class for chat-based approaches that use the ChatCompletion API.
+    """
+
+    def _parse_and_format_structured_response(self, content: str) -> tuple[Optional[dict], str]:
+        """
+        Parse JSON response with fallback handling for truncated or malformed JSON.
+        Returns (parsed_json, formatted_content)
+        """
+        try:
+            # Try parsing the full content
+            structured_data = json.loads(content)
+            return structured_data, structured_data.get("description", content)
+        except json.JSONDecodeError as e:
+            logging.warning(f"Initial JSON parse failed: {e}")
+            
+            # Try to fix common JSON issues
+            fixed_content = self._attempt_json_repair(content)
+            if fixed_content:
+                try:
+                    structured_data = json.loads(fixed_content)
+                    return structured_data, structured_data.get("description", content)
+                except json.JSONDecodeError:
+                    logging.warning("JSON repair attempt failed")
+            
+            return None, content
+
+    def _attempt_json_repair(self, content: str) -> Optional[str]:
+        """
+        Attempt to repair common JSON issues like missing closing braces or truncation.
+        """
+        try:
+            content = content.strip()
+            
+            # First, try to remove any trailing non-JSON content
+            # Look for the end of the main JSON object
+            json_end_patterns = [
+                r'}\s*$',  # Ends with closing brace
+                r']\s*$',  # Ends with closing bracket
+                r'}\s*\n\s*[^{}\[\]"]+.*$',  # Closing brace followed by non-JSON text
+                r']\s*\n\s*[^{}\[\]"]+.*$',  # Closing bracket followed by non-JSON text
+            ]
+            
+            for pattern in json_end_patterns:
+                match = re.search(pattern, content, re.DOTALL)
+                if match and content.find(match.group(0)) > content.find('{'):
+                    # Found trailing content after JSON structure, truncate it
+                    json_part = content[:match.start() + 1]  # Include the closing brace/bracket
+                    content = json_part
+                    break
+            
+            # Now try to balance the braces and brackets
+            # Count unmatched opening braces and brackets
+            brace_count = 0
+            bracket_count = 0
+            in_string = False
+            escape_next = False
+            
+            for char in content:
+                if escape_next:
+                    escape_next = False
+                    continue
+                    
+                if char == '\\':
+                    escape_next = True
+                    continue
+                    
+                if char == '"' and not escape_next:
+                    in_string = not in_string
+                    continue
+                    
+                if not in_string:
+                    if char == '{':
+                        brace_count += 1
+                    elif char == '}':
+                        brace_count -= 1
+                    elif char == '[':
+                        bracket_count += 1
+                    elif char == ']':
+                        bracket_count -= 1
+            
+            # Add missing closing brackets and braces
+            if bracket_count > 0:
+                content += ']' * bracket_count
+                logging.info(f"Added {bracket_count} closing brackets")
+                
+            if brace_count > 0:
+                content += '}' * brace_count
+                logging.info(f"Added {brace_count} closing braces")
+                
+            # Clean up any trailing commas before closing brackets/braces
+            content = re.sub(r',(\s*[}\]])', r'\1', content)
+            
+            return content
+            
+        except Exception as e:
+            logging.warning(f"JSON repair failed: {e}")
+            return None
+
+    def _convert_failed_json_to_readable(self, content: str) -> str:
+        """
+        Convert failed JSON parsing to a readable format by extracting key information.
+        """
+        try:
+            # Check if content is extremely long and truncate if needed
+            if len(content) > 5000:  # If longer than 5000 characters, it's likely too long
+                return f"I found detailed information about products and brands in your advertisement library, but the response was too large to format properly. Here's a summary:\n\n{content[:1000]}..."
+            
+            # Try to extract description if it exists
+            desc_match = re.search(r'"description":\s*"([^"]*)"', content)
+            if desc_match:
+                description = desc_match.group(1)
+                result = description + "\n\n"
+            else:
+                result = "I found comprehensive information about products and brands in the advertisement library:\n\n"
+            
+            # Extract scene references
+            scene_matches = re.findall(r'"start_timestamp":\s*"([^"]*)".*?"end_timestamp":\s*"([^"]*)".*?"description":\s*"([^"]*)".*?"video_file":\s*"([^"]*)"', content, re.DOTALL)
+            if scene_matches:
+                result += "**Scene References:**\n"
+                for start, end, desc, video in scene_matches[:10]:  # Limit to first 10 to avoid overwhelming
+                    result += f"• **{start} - {end}** ({video}): {desc}\n"
+                if len(scene_matches) > 10:
+                    result += f"• ... and {len(scene_matches) - 10} more scenes\n"
+                result += "\n"
+            
+            # Extract key features
+            features_match = re.search(r'"key_features":\s*\[(.*?)\]', content, re.DOTALL)
+            if features_match:
+                features_content = features_match.group(1)
+                features = re.findall(r'"([^"]*)"', features_content)
+                if features:
+                    result += "**Key Features:**\n"
+                    for feature in features:
+                        result += f"• {feature}\n"
+                    result += "\n"
+            
+            # Extract brands
+            brands_match = re.search(r'"brands_mentioned":\s*\[(.*?)\]', content, re.DOTALL)
+            if brands_match:
+                brands_content = brands_match.group(1)
+                brands = re.findall(r'"([^"]*)"', brands_content)
+                if brands:
+                    result += "**Brands Mentioned:**\n"
+                    for brand in brands:
+                        result += f"• {brand}\n"
+                    result += "\n"
+            
+            return result
+            
+        except Exception as e:
+            logging.error(f"Failed to convert JSON to readable format: {e}")
+            # Last resort: return first 1000 characters with a note
+            return f"I found detailed information about products and brands in your advertisement library, but the response was too large to format properly. Here's a summary:\n\n{content[:1000]}..."
 
     NO_RESPONSE = "0"
 
@@ -68,18 +222,16 @@ class ChatApproach(Approach, ABC):
         # Handle structured response parsing
         use_structured_response = overrides.get("use_structured_response", False)
         if use_structured_response:
-            try:
-                # Parse JSON response and add to context
-                structured_data = json.loads(content)
-                extra_info.structured_response = structured_data
-                # Use only the description as content to avoid showing raw JSON
-                content = structured_data.get("description", content)
-                logging.info(f"Successfully parsed structured response with {len(structured_data.get('scene_references', []))} scenes")
-            except json.JSONDecodeError as e:
-                # If JSON parsing fails, treat as regular response
-                logging.warning(f"Failed to parse JSON response: {e}")
-                logging.warning(f"Content length: {len(content)}, Preview: {content[:200]}...")
+            parsed_json, formatted_content = self._parse_and_format_structured_response(content)
+            if parsed_json:
+                extra_info.structured_response = parsed_json
+                content = formatted_content
+                logging.info(f"Successfully parsed structured response with {len(parsed_json.get('scene_references', []))} scenes")
+            else:
+                # If JSON parsing fails completely, convert to readable format
+                content = self._convert_failed_json_to_readable(content)
                 extra_info.structured_response = None
+                logging.warning("Failed to parse JSON, converted to readable format")
         
         if overrides.get("suggest_followup_questions"):
             content, followup_questions = self.extract_followup_questions(content)

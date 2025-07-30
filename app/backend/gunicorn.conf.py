@@ -6,7 +6,7 @@ max_requests_jitter = 50
 log_file = "-"
 bind = "0.0.0.0"
 
-timeout = 230
+timeout = 480  # Increased from 230 for longer AI processing
 # https://learn.microsoft.com/troubleshoot/azure/app-service/web-apps-performance-faqs#why-does-my-request-time-out-after-230-seconds
 
 num_cpus = multiprocessing.cpu_count()

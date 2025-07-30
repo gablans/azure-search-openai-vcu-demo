@@ -15,7 +15,7 @@
 .answerText {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375em;
+    line-height: 1.5em; /* Improved line height for better readability */
     padding-top: 1em;
     padding-bottom: 1em;
 }

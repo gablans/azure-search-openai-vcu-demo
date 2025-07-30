@@ -87,32 +87,32 @@ export const StructuredAnswerParser: React.FC<Props> = ({ structuredResponse, on
             {/* Key Features */}
             {structuredResponse.key_features && structuredResponse.key_features.length > 0 && (
                 <Stack.Item className={styles.featuresSection}>
-                    <Text variant="medium" className={styles.sectionTitle}>
+                    <Text variant="mediumPlus" className={styles.sectionTitle}>
                         Key features:
                     </Text>
-                    <Stack horizontal wrap tokens={{ childrenGap: 8 }}>
+                    <ul className={styles.bulletList}>
                         {structuredResponse.key_features.map((feature, index) => (
-                            <Text key={index} variant="small" className={styles.featureTag}>
-                                {feature}
-                            </Text>
+                            <li key={index} className={styles.bulletItem}>
+                                <Text variant="medium">{feature}</Text>
+                            </li>
                         ))}
-                    </Stack>
+                    </ul>
                 </Stack.Item>
             )}
 
             {/* Brands Mentioned */}
             {structuredResponse.brands_mentioned && structuredResponse.brands_mentioned.length > 0 && (
                 <Stack.Item className={styles.brandsSection}>
-                    <Text variant="medium" className={styles.sectionTitle}>
-                        Brands:
+                    <Text variant="mediumPlus" className={styles.sectionTitle}>
+                        Brands mentioned:
                     </Text>
-                    <Stack horizontal wrap tokens={{ childrenGap: 8 }}>
+                    <ul className={styles.bulletList}>
                         {structuredResponse.brands_mentioned.map((brand, index) => (
-                            <Text key={index} variant="small" className={styles.brandTag}>
-                                {brand}
-                            </Text>
+                            <li key={index} className={styles.bulletItem}>
+                                <Text variant="medium">{brand}</Text>
+                            </li>
                         ))}
-                    </Stack>
+                    </ul>
                 </Stack.Item>
             )}
         </Stack>

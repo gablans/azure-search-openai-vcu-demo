@@ -79,6 +79,18 @@ export const VideoPlayer = forwardRef<VideoPlayerRef, Props>(({ videoFileName, t
         }
     }, [videoSrc, currentTimestamp]);
 
+    // Additional effect to handle timestamp changes for already loaded video
+    useEffect(() => {
+        if (videoRef.current && videoSrc && currentTimestamp !== timestamp) {
+            setCurrentTimestamp(timestamp);
+            // If video is already loaded (readyState > 0), seek immediately
+            if (videoRef.current.readyState > 0) {
+                const seekTime = timestampToSeconds(timestamp);
+                videoRef.current.currentTime = seekTime;
+            }
+        }
+    }, [timestamp]); // Listen to timestamp prop changes
+
     if (error) {
         return (
             <Stack className={styles.errorContainer}>

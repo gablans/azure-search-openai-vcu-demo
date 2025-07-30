@@ -255,7 +255,7 @@ class ChatReadRetrieveReadVisionApproach(ChatApproach):
                 model=self.gpt4v_deployment if self.gpt4v_deployment else self.gpt4v_model,
                 messages=messages,
                 temperature=overrides.get("temperature", 0.3),
-                max_tokens=1024,
+                max_tokens=4096,  # Increased from 1024 for longer structured responses
                 n=1,
                 stream=should_stream,
                 seed=seed,

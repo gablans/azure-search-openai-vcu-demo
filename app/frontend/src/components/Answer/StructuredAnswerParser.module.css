@@ -13,6 +13,7 @@
 .description {
     color: var(--colorNeutralForeground1);
     line-height: 1.5;
+    font-size: 1rem; /* Match user message font size */
 }
 
 .sceneReferencesSection {
@@ -23,6 +24,20 @@
     font-weight: 600;
     color: var(--colorNeutralForeground1);
     margin-bottom: 8px;
+    font-size: 1rem; /* Consistent font size */
+}
+
+.bulletList {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.bulletItem {
+    margin-bottom: 4px;
+    color: var(--colorNeutralForeground1);
+    font-size: 1rem; /* Match user message font size */
+    line-height: 1.5;
 }
 
 .sceneList {
