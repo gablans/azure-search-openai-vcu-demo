@@ -157,7 +157,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
                 self.chatgpt_model,
                 messages,
                 overrides,
-                self.get_response_token_limit(self.chatgpt_model, 1024),
+                self.get_response_token_limit(self.chatgpt_model, 4096),
                 should_stream,
             ),
         )
@@ -205,7 +205,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
                 messages=query_messages,
                 overrides=overrides,
                 response_token_limit=self.get_response_token_limit(
-                    self.chatgpt_model, 100
+                    self.chatgpt_model, 150
                 ),  # Setting too low risks malformed JSON, setting too high may affect performance
                 temperature=0.0,  # Minimize creativity for search query generation
                 tools=tools,

@@ -246,7 +246,7 @@ class Approach(ABC):
         "o4-mini": GPTReasoningModelSupport(streaming=True),
     }
     # Set a higher token limit for GPT reasoning models
-    RESPONSE_DEFAULT_TOKEN_LIMIT = int(os.getenv("AZURE_OPENAI_MAX_TOKENS", "4096"))  # Configurable via env var
+    RESPONSE_DEFAULT_TOKEN_LIMIT = int(os.getenv("AZURE_OPENAI_MAX_TOKENS", "12288"))  # Configurable via env var
     RESPONSE_REASONING_DEFAULT_TOKEN_LIMIT = int(os.getenv("AZURE_OPENAI_REASONING_MAX_TOKENS", "16384"))  # Configurable via env var
 
     def __init__(
